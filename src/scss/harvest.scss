@@ -1,0 +1,71 @@
+#harvestSeason {
+  .slider-component__plug {
+    display: none;
+    &.show {
+      display: flex;
+    }
+  }
+  position: relative;
+  height: 0%;
+  padding-top: calc(100vh - 64px);
+  background-color: #ddd9cf;
+
+  #harvestSeasonSlider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+
+  #harvestSeasonContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .harvest-season__slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  }
+  #harvestSeasonContainer {
+    &[data-step="1"] [data-slide="1"],
+    &[data-step="2"] [data-slide="2"],
+    &[data-step="3"] [data-slide="2"],
+    &[data-step="4"] [data-slide="3"],
+    &[data-step="5"] [data-slide="3"],
+    &[data-step="6"] [data-slide="4"],
+    &[data-step="7"] [data-slide="4"],
+    &[data-step="8"] [data-slide="5"],
+    &[data-step="9"] [data-slide="5"],
+    &[data-step="10"] [data-slide="6"],
+    &[data-step="11"] [data-slide="6"],
+    &[data-step="12"] [data-slide="7"],
+    &[data-step="13"] [data-slide="7"],
+    &[data-step="14"] [data-slide="8"],
+    &[data-step="15"] [data-slide="8"],
+    &[data-step="16"] [data-slide="9"],
+    &[data-step="17"] [data-slide="9"],
+    &[data-step="18"] [data-slide="10"],
+    &[data-step="19"] [data-slide="10"] {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
