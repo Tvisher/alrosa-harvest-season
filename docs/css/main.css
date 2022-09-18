@@ -15,25 +15,17 @@
 }
 
 @font-face {
-  font-family: "Avenir";
+  font-family: "Radley";
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Avenir";
-  font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
+  src: url("../fonts/Radley-Regular.woff2") format("woff2"), url("../fonts/Radley-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Golos";
+  font-family: "AvenirNextCyr";
   font-display: swap;
-  src: url("../fonts/Golos-Text_Black.woff2") format("woff2"), url("../fonts/Golos-Text_Black.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -43,14 +35,14 @@
   font-display: swap;
   src: url("../fonts/Radley-Italic.woff2") format("woff2"), url("../fonts/Radley-Italic.woff") format("woff");
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Radley";
+  font-family: "AvenirNextCyr";
   font-display: swap;
-  src: url("../fonts/Radley-Regular.woff2") format("woff2"), url("../fonts/Radley-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -71,9 +63,25 @@
 }
 
 @font-face {
+  font-family: "Golos";
+  font-display: swap;
+  src: url("../fonts/Golos-Text_Black.woff2") format("woff2"), url("../fonts/Golos-Text_Black.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Snell Roundhand";
   font-display: swap;
   src: url("../fonts/Snell Roundhand.woff2") format("woff2"), url("../fonts/Snell Roundhand.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sylfaen";
+  font-display: swap;
+  src: url("../fonts/Sylfaen.woff2") format("woff2"), url("../fonts/Sylfaen.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -2034,7 +2042,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: #ddd9cf;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2064,6 +2072,107 @@ body {
 #harvestSeason #harvestSeasonContainer[data-step="19"] [data-slide="10"] {
   opacity: 1;
   visibility: visible;
+}
+
+#harvestSeason .main-slide {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+#harvestSeason .main-slide__images {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: flex-start;
+  gap: calc((1vw + 1vh) * 0.9);
+}
+
+#harvestSeason .main-slide__image {
+  width: calc((1vw + 1vh) * 9.3);
+}
+
+#harvestSeason .main-slide__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#harvestSeason .images-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc((1vw + 1vh) * 0.9);
+}
+
+#harvestSeason .images-col:nth-of-type(2) {
+  margin-top: calc((1vw + 1vh) * 2.17);
+}
+
+#harvestSeason .images-col:nth-of-type(1) .main-slide__image:nth-of-type(1) {
+  height: calc((1vw + 1vh) * 11.78);
+}
+
+#harvestSeason .images-col:nth-of-type(1) .main-slide__image:nth-of-type(2) {
+  height: calc((1vw + 1vh) * 8.85);
+}
+
+#harvestSeason .images-col:nth-of-type(1) .main-slide__image:nth-of-type(3) {
+  height: calc((1vw + 1vh) * 6.54);
+}
+
+#harvestSeason .images-col:nth-of-type(2) .main-slide__image:nth-of-type(1) {
+  height: calc((1vw + 1vh) * 7.22);
+}
+
+#harvestSeason .images-col:nth-of-type(2) .main-slide__image:nth-of-type(2) {
+  height: calc((1vw + 1vh) * 7.54);
+}
+
+#harvestSeason .images-col:nth-of-type(2) .main-slide__image:nth-of-type(3) {
+  height: calc((1vw + 1vh) * 6.95);
+}
+
+#harvestSeason .images-col:nth-of-type(3) .main-slide__image:nth-of-type(1) {
+  height: calc((1vw + 1vh) * 7.63);
+}
+
+#harvestSeason .images-col:nth-of-type(3) .main-slide__image:nth-of-type(2) {
+  height: calc((1vw + 1vh) * 11.42);
+}
+
+#harvestSeason .images-col:nth-of-type(3) .main-slide__image:nth-of-type(3) {
+  height: calc((1vw + 1vh) * 7.22);
+}
+
+#harvestSeason .main-slide__content {
+  padding-left: calc((1vw + 1vh) * 2.95);
+  padding-top: calc((1vw + 1vh) * 10.75);
+}
+
+#harvestSeason .main-slide__title {
+  font-family: "Sylfaen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc((1vw + 1vh) * 3.17);
+  line-height: 107%;
+  letter-spacing: 1px;
+  color: #22211e;
+  margin-bottom: calc((1vw + 1vh) * 1.22);
+}
+
+#harvestSeason .main-slide__descr {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc((1vw + 1vh) * 0.9);
+  line-height: 150%;
+  color: #22211e;
+  max-width: calc((1vw + 1vh) * 28.26);
+}
+
+.asd {
+  font-size: 22.04;
 }
 
 @media (min-device-width: 320px) and (max-device-width: 900px) and (orientation: landscape) {

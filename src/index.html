@@ -24,55 +24,51 @@
             <div class="swiper" id="harvestSeasonSlider">
                 <div class="swiper-wrapper"></div>
                 <div class="swiper-pagination"></div>
-                <div class="fake-pagination">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
             <div class="harvest-season__slides" id="harvestSeasonContainer" data-step="1">
-                <div class="harvest-season__slide" data-slide="1">01</div>
+                <div class="harvest-season__slide" data-slide="1">
+                    <div class="main-slide">
+                        <div class="main-slide__images">
+                            <div class="images-col">
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-1.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-4.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-7.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="images-col">
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-2.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-5.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-8.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="images-col">
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-3.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-6.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-9.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-slide__content">
+                            <h1 class="main-slide__title">СЕЗОН <br>УРОЖАЯ</h1>
+                            <p class="main-slide__descr">Осень – время, когда людей в разных уголках мира объединяет одно важное дело – сбор урожая. Это занятие и, собственно, его результаты вдохновляли художников во все времена. Мы собрали богатство оттенков драгоценных плодов этого сезона в натюрмортах, пейзажах, портретах и бриллиантах.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="harvest-season__slide" data-slide="2">02</div>
                 <div class="harvest-season__slide" data-slide="3">03</div>
                 <div class="harvest-season__slide" data-slide="4">04</div>
@@ -122,7 +118,7 @@
                         const sliderSteps = 19;
                         for (let index = 0; index < sliderSteps; index++) {
                             const sliderStep = index + 1;
-                            slider.addSlide(index, `<div class="swiper-slide">Step ${sliderStep}</div>`);
+                            slider.addSlide(index, `<div class="swiper-slide"></div>`);
                         }
                     },
 

@@ -15,26 +15,18 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Avenir";
+  font-family: "Radley";
   font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"),
-    url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"),
-    url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
+  src: url("../fonts/Radley-Regular.woff2") format("woff2"),
+    url("../fonts/Radley-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Golos";
+  font-family: "AvenirNextCyr";
   font-display: swap;
-  src: url("../fonts/Golos-Text_Black.woff2") format("woff2"),
-    url("../fonts/Golos-Text_Black.woff") format("woff");
+  src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"),
+    url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -44,14 +36,14 @@
   src: url("../fonts/Radley-Italic.woff2") format("woff2"),
     url("../fonts/Radley-Italic.woff") format("woff");
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Radley";
+  font-family: "AvenirNextCyr";
   font-display: swap;
-  src: url("../fonts/Radley-Regular.woff2") format("woff2"),
-    url("../fonts/Radley-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"),
+    url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -71,10 +63,26 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Golos";
+  font-display: swap;
+  src: url("../fonts/Golos-Text_Black.woff2") format("woff2"),
+    url("../fonts/Golos-Text_Black.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "Snell Roundhand";
   font-display: swap;
   src: url("../fonts/Snell Roundhand.woff2") format("woff2"),
     url("../fonts/Snell Roundhand.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sylfaen";
+  font-display: swap;
+  src: url("../fonts/Sylfaen.woff2") format("woff2"),
+    url("../fonts/Sylfaen.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
