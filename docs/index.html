@@ -25,7 +25,7 @@
                 <div class="swiper-wrapper"></div>
                 <div class="swiper-pagination"></div>
             </div>
-            <div class="harvest-season__slides" id="harvestSeasonContainer" data-step="1">
+            <div class="harvest-season__slides" id="harvestSeasonContainer" data-step="0">
                 <div class="harvest-season__slide" data-slide="1">
                     <div class="main-slide">
                         <div class="main-slide__images">
@@ -157,6 +157,7 @@
                             const sliderStep = index + 1;
                             slider.addSlide(index, `<div class="swiper-slide"></div>`);
                         }
+                        customSlider.dataset.step = 1;
                     },
 
                     activeIndexChange(swiper) {
