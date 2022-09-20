@@ -71,10 +71,10 @@
                 </div>
                 <div class="harvest-season__slide" data-slide="2">
                     <div class="slide-container">
+                        <div class="painting__image">
+                            <img src="@img/slide-1-img.jpg" alt="">
+                        </div>
                         <div class="painting">
-                            <div class="painting__image">
-                                <img src="@img/slide-1-img.jpg" alt="">
-                            </div>
                             <div class="painting__nameplate">
                                 <div class="nameplate__auth">Винсент Ван Гог</div>
                                 <div class="nameplate__name">НАТЮРМОРТ С АЙВОЙ</div>
@@ -114,11 +114,7 @@
                             <div class="nameplate__name">КОСМИЧЕСКИЙ ФРУКТ: ЛИМОНЫ</div>
                             <div class="nameplate__date">1978</div>
                         </div>
-                        <div class="painting">
-                            <!-- <div class="painting__image">
-                                <img src="@img/slide-2-img.jpg" alt="">
-                            </div> -->
-                        </div>
+                        <div class="painting"></div>
                         <div class="painting__image">
                             <img src="@img/slide-2-img.jpg" alt="">
                         </div>
@@ -143,7 +139,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="harvest-season__slide" data-slide="4">04</div>
+                <div class="harvest-season__slide" data-slide="4">
+                    <div class="slide-container">
+                        <div class="painting__nameplate">
+                            <div class="nameplate__auth">Казимир Малевич</div>
+                            <div class="nameplate__name">УБОРКА РЖИ</div>
+                            <div class="nameplate__date">1912</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="@img/slide-3-img.jpg" alt="">
+                        </div>
+                        <div class="briliant">
+                            <div class="briliant__image">
+                                <img src="@img/slide-3-briliant.png" alt="">
+                            </div>
+                            <div class="briliant__nameplate">
+                                <div class="briliant__info">
+                                    масса:
+                                    <span class="cursive-bold">10,07 карата</span>
+                                </div>
+                                <div class="briliant__info">
+                                    цвет:
+                                    <span class="cursive-bold">бесцветный, по бесцветной шкале цвет D</span>
+                                </div>
+                                <div class="briliant__info">
+                                    форма огранки:
+                                    <span class="cursive-bold">изумруд</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="harvest-season__slide" data-slide="5">05</div>
                 <div class="harvest-season__slide" data-slide="6">06</div>
                 <div class="harvest-season__slide" data-slide="7">07</div>
@@ -178,7 +205,7 @@
 
             const swiper = new Swiper("#harvestSeasonSlider", {
                 slidesPerView: 1,
-                speed: 800,
+                speed: 1000,
                 // spaceBetween: 30,
                 mousewheel: true,
                 pagination: {
@@ -197,14 +224,17 @@
 
                     activeIndexChange(swiper) {
                         const stepIndex = swiper.activeIndex + 1
-                        // if ((stepIndex === 1 || stepIndex === 2 || stepIndex === 5 || stepIndex === 8 || stepIndex === 11 || stepIndex === 14) && sliderDirection < stepIndex) {
-                        //     customSlider.style.opacity = '0'
-                        // }
+                        if (((stepIndex === 2 || stepIndex === 4 || stepIndex === 6 || stepIndex === 8) && sliderDirection < stepIndex) ||
+                            (stepIndex === 1 || stepIndex === 3 || stepIndex === 5 || stepIndex === 7) && sliderDirection > stepIndex) {
+                            customSlider.style.opacity = '0'
+                        }
                         setTimeout(() => {
-                            customSlider.style.opacity = '1'
-                            customSlider.dataset.step = stepIndex;
+                            setTimeout(() => {
+                                customSlider.style.opacity = '1'
+                            }, 200);
                             sliderDirection = stepIndex;
-                        }, 200);
+                            customSlider.dataset.step = stepIndex;
+                        }, 250);
                     }
                 }
             });
