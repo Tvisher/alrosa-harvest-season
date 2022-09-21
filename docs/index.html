@@ -171,8 +171,85 @@
                         </div>
                     </div>
                 </div>
-                <div class="harvest-season__slide" data-slide="5">05</div>
-                <div class="harvest-season__slide" data-slide="6">06</div>
+                <div class="harvest-season__slide" data-slide="5">
+                    <div class="slide-container">
+                        <div class="painting__nameplate">
+                            <div class="nameplate__auth">Поль Сезанн</div>
+                            <div class="nameplate__name">НАТЮРМОРТ С ВИШНЕЙ И ПЕРСИКАМИ</div>
+                            <div class="nameplate__date">1885–1987</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="img/slide-4-img.jpg" alt="">
+                        </div>
+                        <div class="briliant__image first">
+                            <img src="img/slide-4-briliant.png" alt="">
+                        </div>
+                        <div class="briliant__nameplate first">
+                            <div class="briliant__info">
+                                масса:
+                                <span class="cursive-bold">1,01 карата</span>
+                            </div>
+                            <div class="briliant__info">
+                                цвет:
+                                <span class="cursive-bold">Fancy Deep Orangy Yellowish Brown</span>
+                            </div>
+                            <div class="briliant__info">
+                                форма огранки:
+                                <span class="cursive-bold">кушон</span>
+                            </div>
+                        </div>
+                        <div class="briliant__image second">
+                            <img src="img/slide-4.1-briliant.png" alt="">
+                        </div>
+                        <div class="briliant__nameplate second">
+                            <div class="briliant__info">
+                                масса:
+                                <span class="cursive-bold"> 0,4 карата</span>
+                            </div>
+                            <div class="briliant__info">
+                                цвет:
+                                <span class="cursive-bold">Fancy Intense Purple</span>
+                            </div>
+                            <div class="briliant__info">
+                                форма огранки:
+                                <span class="cursive-bold">кушон</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="6">
+                    <div class="slide-container">
+                        <div class="painting__nameplate">
+                            <div class="nameplate__auth">Клод Моне</div>
+                            <div class="nameplate__name">БАНКА С ПЕРСИКАМИ</div>
+                            <div class="nameplate__date">1866</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="img/slide-5-img.jpg" alt="">
+                        </div>
+                        <div class="briliant">
+                            <div class="briliant__image">
+                                <img src="img/slide-5-briliant.png" alt="">
+                            </div>
+                            <div class="briliant__nameplate">
+                                <div class="briliant__info">
+                                    масса:
+                                    <span class="cursive-bold">4,04 карата</span>
+                                </div>
+                                <div class="briliant__info">
+                                    цвет:
+                                    <span class="cursive-bold">Fancy Light Yellow</span>
+                                </div>
+                                <div class="briliant__info">
+                                    форма огранки:
+                                    <span class="cursive-bold">овал</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="harvest-season__slide" data-slide="7">07</div>
                 <div class="harvest-season__slide" data-slide="8">08</div>
                 <div class="harvest-season__slide" data-slide="9">09</div>
@@ -191,7 +268,7 @@
                     <path d="M90 108.5L112.5 131M90 108.5L100.5 98M90 108.5H100.5M112.5 131L135 108.5M112.5 131L100.5 108.5M112.5 131L124.5 108.5M135 108.5L124.5 98M135 108.5H124.5M124.5 98V108.5M124.5 98H112.5M100.5 98H112.5M100.5 98V108.5M124.5 108.5L112.5 98M124.5 108.5H100.5M112.5 98L100.5 108.5" stroke="#B19673" stroke-width="2" />
                 </svg>
             </div>
-            <div class="slider-component__plug-text">This service works with the horizontal position of the screen</div>
+            <div class="slider-component__plug-text">данный сервис работает<br>при горизонтальном положении экрана</div>
         </div>
     </section>
 
@@ -224,8 +301,9 @@
 
                     activeIndexChange(swiper) {
                         const stepIndex = swiper.activeIndex + 1
-                        if (((stepIndex === 2 || stepIndex === 4 || stepIndex === 6 || stepIndex === 8) && sliderDirection < stepIndex) ||
-                            (stepIndex === 1 || stepIndex === 3 || stepIndex === 5 || stepIndex === 7) && sliderDirection > stepIndex) {
+                        if (((stepIndex % 2 === 0) && sliderDirection < stepIndex)
+                            ||
+                            ((stepIndex % 2 !== 0)) && sliderDirection > stepIndex) {
                             customSlider.style.opacity = '0'
                         }
                         setTimeout(() => {

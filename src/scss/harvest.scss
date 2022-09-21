@@ -156,6 +156,24 @@
     }
   }
 
+  .briliant__image {
+    position: absolute;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .painting__image {
+    position: absolute;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
   .main-slide__content {
     padding-left: calc($index * 2.95);
     padding-top: calc($index * 10.75);
@@ -211,7 +229,7 @@
     letter-spacing: 1px;
     color: #22211e;
     text-transform: uppercase;
-    margin-bottom: calc($index * 0.4);
+    margin-bottom: calc($index * 0.6);
   }
   .nameplate__date {
     font-family: "Times New Roman";
@@ -261,14 +279,8 @@
     .painting__image {
       transition: top 0.6s ease-in-out, top 0.6s ease-in-out,
         left 0.6s ease-in-out, right 0.6s ease-in-out, bottom 0.6s ease-in-out;
-      position: absolute;
       opacity: 0;
       z-index: 3;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
     }
     .painting__nameplate {
       z-index: 1;
@@ -290,16 +302,10 @@
     }
 
     .briliant__image {
-      position: absolute;
       top: calc($index * 5.44);
       left: calc($index * 3.5);
       width: calc($index * 14.97);
       height: calc($index * 10.43);
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
     }
     .briliant__nameplate {
       position: absolute;
@@ -370,12 +376,6 @@
     .painting__image {
       transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
         right 0.6s ease-in-out, left 0.6s ease-in-out;
-      position: absolute;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
       opacity: 0;
     }
     .painting__nameplate {
@@ -398,16 +398,10 @@
     }
 
     .briliant__image {
-      position: absolute;
       left: calc($index * 45);
       top: calc($index * 12.7);
       width: calc($index * 14.97);
       height: calc($index * 8.62);
-      img {
-        width: 100%;
-        height: 100%;
-        object-position: cover;
-      }
     }
     .briliant__nameplate {
       position: absolute;
@@ -471,14 +465,8 @@
     .painting__image {
       transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
         right 0.6s ease-in-out, left 0.6s ease-in-out;
-      position: absolute;
       z-index: 3;
       opacity: 0;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
     }
     .painting__nameplate {
       z-index: 5;
@@ -501,16 +489,10 @@
     }
 
     .briliant__image {
-      position: absolute;
       left: calc($index * 2.12);
       top: calc($index * 2.62);
       width: calc($index * 16);
       height: calc($index * 13);
-      img {
-        width: 100%;
-        height: 100%;
-        object-position: cover;
-      }
     }
     .briliant__nameplate {
       position: absolute;
@@ -558,8 +540,183 @@
       opacity: 1;
     }
   }
+
+  [data-slide="5"] {
+    .painting {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 50%;
+      background-color: #ddd9cf;
+      z-index: 2;
+    }
+    .painting__image {
+      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
+        right 0.6s ease-in-out, left 0.6s ease-in-out;
+      z-index: 3;
+      opacity: 0;
+    }
+    .painting__nameplate {
+      z-index: 5;
+      position: absolute;
+      left: 66.25vw;
+      top: 70vh;
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out, left 0.6s ease-in-out;
+    }
+
+    .briliant__image {
+      transition: opacity 0.6s ease-in-out;
+      opacity: 0;
+      z-index: 5;
+      &.first {
+        left: 63.2vw;
+        top: 8.4vh;
+        width: 12vw;
+        height: 22vh;
+      }
+      &.second {
+        left: 63.4vw;
+        top: 35vh;
+        width: 13vw;
+        height: 23vh;
+      }
+    }
+    .briliant__nameplate {
+      transition: opacity 0.6s ease-in-out;
+      position: absolute;
+      opacity: 0;
+      z-index: 5;
+      &.first {
+        top: 10.9vh;
+        left: 77.3vw;
+      }
+      &.second {
+        top: 40.5vh;
+        left: 77.3vw;
+      }
+    }
+  }
+  .harvest-season__slides[data-step="8"] [data-slide="5"] {
+    .painting {
+      width: 100%;
+      transition: width 0.6s ease-in-out 0s;
+    }
+    .painting__image {
+      opacity: 1;
+      left: 0;
+      right: 37.5vw;
+      top: 0;
+      bottom: 0;
+    }
+
+    .painting__nameplate {
+      opacity: 1;
+    }
+  }
+  .harvest-season__slides[data-step="9"] [data-slide="5"] {
+    .painting__image {
+      opacity: 1;
+      left: 6.25vw;
+      right: 41.6vw;
+      top: 7.3vh;
+      bottom: 9.7vh;
+    }
+    .painting {
+      width: 100%;
+      opacity: 1;
+    }
+
+    .painting__nameplate {
+      left: 62.5vw;
+      opacity: 1;
+    }
+    .briliant__image,
+    .briliant__nameplate {
+      opacity: 1;
+    }
+  }
 }
 
-.asd {
-  font-size: 22.04;
+[data-slide="6"] {
+  .painting {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: #ddd9cf;
+    z-index: 3;
+    width: 100%;
+    transition: width 0.6s ease-in-out;
+  }
+  .painting__image {
+    transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
+      right 0.6s ease-in-out, left 0.6s ease-in-out;
+    z-index: 3;
+    opacity: 0;
+  }
+  .painting__nameplate {
+    z-index: 5;
+    position: absolute;
+    left: 76.73vw;
+    top: 7.56vh;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, left 0.6s ease-in-out;
+  }
+  .briliant {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+
+  .briliant__image {
+    left: 4.3vw;
+    top: 35.3vh;
+    width: 17vw;
+    height: 36vh;
+  }
+  .briliant__nameplate {
+    position: absolute;
+    bottom: 10.2vh;
+    left: 5.5vw;
+  }
+}
+
+.harvest-season__slides[data-step="10"] [data-slide="6"] {
+  .painting__image {
+    left: 30.5vw;
+    right: 31.2vw;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  .painting__nameplate {
+    opacity: 1;
+  }
+}
+
+.harvest-season__slides[data-step="11"] [data-slide="6"] {
+  .painting {
+    width: 73.5%;
+  }
+  .briliant {
+    opacity: 1;
+  }
+  .painting__image {
+    left: 33.54vw;
+    right: 34.23vw;
+    top: 7.2vh;
+    bottom: 9.7vh;
+    opacity: 1;
+  }
+  .painting__nameplate {
+    opacity: 1;
+    left: 69.51vw;
+  }
 }
