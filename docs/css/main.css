@@ -2744,6 +2744,178 @@ body {
   left: 69.51vw;
 }
 
+[data-slide="7"] .painting__image {
+  transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out, right 0.6s ease-in-out, left 0.6s ease-in-out;
+  z-index: 3;
+  opacity: 0;
+}
+
+[data-slide="7"] .painting__nameplate {
+  z-index: 5;
+  position: absolute;
+  left: 47.56vw;
+  top: 7.56vh;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, left 0.6s ease-in-out;
+}
+
+[data-slide="7"] .briliant {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 54.5vw;
+  height: 100%;
+  z-index: 3;
+  background: #ddd9cf;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+[data-slide="7"] .briliant__image {
+  z-index: 4;
+  left: 51vw;
+  top: 48.3vh;
+  width: 15.5vw;
+  height: 36.5vh;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+[data-slide="7"] .briliant__nameplate {
+  position: absolute;
+  top: 60.9vh;
+  left: 67.7vw;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.harvest-season__slides[data-step="12"] [data-slide="7"] .painting__image {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 58.8vw;
+  opacity: 1;
+}
+
+.harvest-season__slides[data-step="12"] [data-slide="7"] .painting__nameplate {
+  opacity: 1;
+}
+
+.harvest-season__slides[data-step="13"] [data-slide="7"] .painting__image {
+  top: 7.36vh;
+  left: 5.55vw;
+  bottom: 9.73vh;
+  right: 61.4vw;
+  opacity: 1;
+}
+
+.harvest-season__slides[data-step="13"] [data-slide="7"] .painting__nameplate {
+  opacity: 1;
+  left: 52.15vw;
+}
+
+.harvest-season__slides[data-step="13"] [data-slide="7"] .briliant,
+.harvest-season__slides[data-step="13"] [data-slide="7"] .briliant__image,
+.harvest-season__slides[data-step="13"] [data-slide="7"] .briliant__nameplate {
+  opacity: 1;
+}
+
+[data-slide="8"] .painting__image {
+  transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out, right 0.6s ease-in-out, left 0.6s ease-in-out;
+  z-index: 5;
+  opacity: 0;
+}
+
+[data-slide="8"] .painting__nameplate {
+  z-index: 4;
+  position: absolute;
+  top: 4.47vh;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+[data-slide="8"] .painting__nameplate.first {
+  left: 72.3vw;
+}
+
+[data-slide="8"] .painting__nameplate.second {
+  left: 9.37vw;
+}
+
+[data-slide="8"] .painting {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: #ddd9cf;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out, right 0.6s ease-in-out;
+}
+
+[data-slide="8"] .briliant__image {
+  z-index: 4;
+  left: 74.5vw;
+  top: 3vh;
+  width: 18vw;
+  height: 36.5vh;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+[data-slide="8"] .briliant__nameplate {
+  position: absolute;
+  top: 38vh;
+  left: 76vw;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.harvest-season__slides[data-step="14"] [data-slide="8"] .painting__image {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 30.48vw;
+  opacity: 1;
+}
+
+.harvest-season__slides[data-step="14"] [data-slide="8"] .painting__nameplate.first {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.harvest-season__slides[data-step="14"] [data-slide="8"] .painting {
+  opacity: 1;
+}
+
+.harvest-season__slides[data-step="15"] [data-slide="8"] .painting__image {
+  left: 9.37vw;
+  top: 21.8vh;
+  right: 42.6vw;
+  bottom: 10.78vh;
+  opacity: 1;
+}
+
+.harvest-season__slides[data-step="15"] [data-slide="8"] .painting {
+  right: 30vw;
+  opacity: 1;
+}
+
+.harvest-season__slides[data-step="15"] [data-slide="8"] .painting__nameplate.second {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.harvest-season__slides[data-step="15"] [data-slide="8"] .briliant,
+.harvest-season__slides[data-step="15"] [data-slide="8"] .briliant__image,
+.harvest-season__slides[data-step="15"] [data-slide="8"] .briliant__nameplate {
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out 0.2s;
+}
+
 @media (min-device-width: 320px) and (max-device-width: 900px) and (orientation: landscape) {
   .slider-component__sheel .slider-slides {
     height: calc(100% - 40px);
