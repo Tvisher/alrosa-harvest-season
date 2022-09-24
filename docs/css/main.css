@@ -2288,6 +2288,10 @@ body {
   position: relative;
 }
 
+#harvestSeason .harvest-season__wrapper {
+  background-color: #ddd9cf;
+}
+
 #harvestSeason [data-slide="2"] .painting {
   transition: width 0.8s ease;
   z-index: 2;
@@ -2305,15 +2309,15 @@ body {
 }
 
 #harvestSeason [data-slide="2"] .painting__nameplate {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
-  top: calc((1vw + 1vh) * 2.54);
-  left: calc((1vw + 1vh) * 51.72);
+  top: 7.37vh;
+  left: 79vw;
 }
 
 #harvestSeason [data-slide="2"] .painting__nameplate.step-2 {
-  top: calc((1vw + 1vh) * 24.86);
-  left: calc((1vw + 1vh) * 4.08);
+  top: 72vh;
+  left: 43.75vw;
 }
 
 #harvestSeason [data-slide="2"] .briliant {
@@ -2325,20 +2329,16 @@ body {
 }
 
 #harvestSeason [data-slide="2"] .briliant__image {
-  top: calc((1vw + 1vh) * 5.44);
-  left: calc((1vw + 1vh) * 3.5);
-  width: calc((1vw + 1vh) * 14.97);
-  height: calc((1vw + 1vh) * 10.43);
+  top: 15vh;
+  left: 6vw;
+  width: 23vw;
+  height: 32vh;
 }
 
 #harvestSeason [data-slide="2"] .briliant__nameplate {
   position: absolute;
-  top: calc((1vw + 1vh) * 17.42);
-  left: calc((1vw + 1vh) * 4.63);
-}
-
-#harvestSeason .harvest-season__wrapper {
-  background-color: #ddd9cf;
+  top: 50.5vh;
+  left: 7vw;
 }
 
 #harvestSeason .harvest-season__slides[data-step="2"] [data-slide="2"] .painting {
@@ -2372,10 +2372,10 @@ body {
 }
 
 #harvestSeason .harvest-season__slides[data-step="3"] [data-slide="2"] .painting__image {
-  top: calc((1vw + 1vh) * 2.54);
-  left: calc((1vw + 1vh) * 28.58);
-  bottom: calc((1vw + 1vh) * 7.44);
-  right: calc((1vw + 1vh) * 4.08);
+  top: 7.5vh;
+  left: 43.75vw;
+  bottom: 21.4vh;
+  right: 12vh;
   opacity: 1;
 }
 
@@ -2408,8 +2408,8 @@ body {
 #harvestSeason [data-slide="3"] .painting__nameplate {
   z-index: 5;
   position: absolute;
-  left: calc((1vw + 1vh) * 4.63);
-  top: calc((1vw + 1vh) * 1.81);
+  left: 8.2vw;
+  top: 5.5vh;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -2426,16 +2426,16 @@ body {
 }
 
 #harvestSeason [data-slide="3"] .briliant__image {
-  left: calc((1vw + 1vh) * 45);
-  top: calc((1vw + 1vh) * 12.7);
-  width: calc((1vw + 1vh) * 14.97);
-  height: calc((1vw + 1vh) * 8.62);
+  left: 69vw;
+  top: 35vh;
+  width: 25vw;
+  height: 26vh;
 }
 
 #harvestSeason [data-slide="3"] .briliant__nameplate {
   position: absolute;
-  bottom: calc((1vw + 1vh) * 6.58);
-  left: calc((1vw + 1vh) * 45.87);
+  bottom: 17.4vh;
+  left: 70.3vw;
 }
 
 #harvestSeason .harvest-season__slides[data-step="4"] [data-slide="3"] .painting {
@@ -2447,7 +2447,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  left: calc((1vw + 1vh) * 21.8);
+  left: 33.5vw;
   z-index: 4;
   opacity: 1;
   transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out, right 0.6s ease-in-out, left 0.6s ease-in-out, opacity 0.6s ease-in-out;
@@ -2463,10 +2463,10 @@ body {
 }
 
 #harvestSeason .harvest-season__slides[data-step="5"] [data-slide="3"] .painting__image {
-  top: calc((1vw + 1vh) * 6.62);
-  left: calc((1vw + 1vh) * 4.63);
-  bottom: calc((1vw + 1vh) * 4);
-  right: calc((1vw + 1vh) * 31);
+  top: 19vh;
+  left: 8.5vw;
+  bottom: 11vh;
+  right: 47.5vw;
   z-index: 4;
   transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out, right 0.6s ease-in-out, left 0.6s ease-in-out, opacity 0.6s ease-in-out;
   opacity: 1;
@@ -2498,8 +2498,8 @@ body {
 #harvestSeason [data-slide="4"] .painting__nameplate {
   z-index: 5;
   position: absolute;
-  left: calc((1vw + 1vh) * 52.22);
-  top: calc((1vw + 1vh) * 2.27);
+  left: 80vw;
+  top: 6.6vh;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, left 0.6s ease-in-out;
 }
@@ -2517,16 +2517,16 @@ body {
 }
 
 #harvestSeason [data-slide="4"] .briliant__image {
-  left: calc((1vw + 1vh) * 2.12);
-  top: calc((1vw + 1vh) * 2.62);
-  width: calc((1vw + 1vh) * 16);
-  height: calc((1vw + 1vh) * 13);
+  left: 3.5vw;
+  top: 7vh;
+  width: 25vw;
+  height: 38vh;
 }
 
 #harvestSeason [data-slide="4"] .briliant__nameplate {
   position: absolute;
-  bottom: calc((1vw + 1vh) * 12.75);
-  left: calc((1vw + 1vh) * 3.62);
+  top: 46.5vh;
+  left: 5.6vw;
 }
 
 #harvestSeason .harvest-season__slides[data-step="6"] [data-slide="4"] .painting {
@@ -2535,8 +2535,8 @@ body {
 }
 
 #harvestSeason .harvest-season__slides[data-step="6"] [data-slide="4"] .painting__image {
-  left: calc((1vw + 1vh) * 15.56);
-  right: calc((1vw + 1vh) * 15.56);
+  left: 23.8vw;
+  right: 24vw;
   top: 0;
   bottom: 0;
   opacity: 1;
@@ -2555,16 +2555,16 @@ body {
 }
 
 #harvestSeason .harvest-season__slides[data-step="7"] [data-slide="4"] .painting__image {
-  left: calc((1vw + 1vh) * 25);
-  right: calc((1vw + 1vh) * 13.15);
-  top: calc((1vw + 1vh) * 2.22);
-  bottom: calc((1vw + 1vh) * 3.67);
+  left: 38.4vw;
+  right: 20.3vw;
+  top: 6.5vh;
+  bottom: 11vh;
   opacity: 1;
 }
 
 #harvestSeason .harvest-season__slides[data-step="7"] [data-slide="4"] .painting__nameplate {
-  left: calc((1vw + 1vh) * 54.44);
-  top: calc((1vw + 1vh) * 2.27);
+  left: 83.2vw;
+  top: 6.5vh;
   opacity: 1;
 }
 
@@ -2670,7 +2670,7 @@ body {
   opacity: 1;
 }
 
-[data-slide="6"] .painting {
+#harvestSeason [data-slide="6"] .painting {
   position: absolute;
   right: 0;
   height: 100%;
@@ -2680,13 +2680,13 @@ body {
   transition: width 0.6s ease-in-out;
 }
 
-[data-slide="6"] .painting__image {
+#harvestSeason [data-slide="6"] .painting__image {
   transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out, right 0.6s ease-in-out, left 0.6s ease-in-out;
   z-index: 3;
   opacity: 0;
 }
 
-[data-slide="6"] .painting__nameplate {
+#harvestSeason [data-slide="6"] .painting__nameplate {
   z-index: 5;
   position: absolute;
   left: 76.73vw;
@@ -2695,7 +2695,7 @@ body {
   transition: opacity 0.3s ease-in-out, left 0.6s ease-in-out;
 }
 
-[data-slide="6"] .briliant {
+#harvestSeason [data-slide="6"] .briliant {
   position: absolute;
   left: 0;
   top: 0;
@@ -2707,20 +2707,20 @@ body {
   transition: opacity 0.6s ease-in-out;
 }
 
-[data-slide="6"] .briliant__image {
+#harvestSeason [data-slide="6"] .briliant__image {
   left: 4.3vw;
   top: 35.3vh;
   width: 17vw;
   height: 36vh;
 }
 
-[data-slide="6"] .briliant__nameplate {
+#harvestSeason [data-slide="6"] .briliant__nameplate {
   position: absolute;
   bottom: 10.2vh;
   left: 5.5vw;
 }
 
-.harvest-season__slides[data-step="10"] [data-slide="6"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="10"] [data-slide="6"] .painting__image {
   left: 30.5vw;
   right: 31.2vw;
   top: 0;
@@ -2728,19 +2728,19 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="10"] [data-slide="6"] .painting__nameplate {
+#harvestSeason .harvest-season__slides[data-step="10"] [data-slide="6"] .painting__nameplate {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="11"] [data-slide="6"] .painting {
+#harvestSeason .harvest-season__slides[data-step="11"] [data-slide="6"] .painting {
   width: 73.5%;
 }
 
-.harvest-season__slides[data-step="11"] [data-slide="6"] .briliant {
+#harvestSeason .harvest-season__slides[data-step="11"] [data-slide="6"] .briliant {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="11"] [data-slide="6"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="11"] [data-slide="6"] .painting__image {
   left: 33.54vw;
   right: 34.23vw;
   top: 7.2vh;
@@ -2748,18 +2748,18 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="11"] [data-slide="6"] .painting__nameplate {
+#harvestSeason .harvest-season__slides[data-step="11"] [data-slide="6"] .painting__nameplate {
   opacity: 1;
   left: 69.51vw;
 }
 
-[data-slide="7"] .painting__image {
+#harvestSeason [data-slide="7"] .painting__image {
   transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out, right 0.6s ease-in-out, left 0.6s ease-in-out;
   z-index: 3;
   opacity: 0;
 }
 
-[data-slide="7"] .painting__nameplate {
+#harvestSeason [data-slide="7"] .painting__nameplate {
   z-index: 5;
   position: absolute;
   left: 47.56vw;
@@ -2768,7 +2768,7 @@ body {
   transition: opacity 0.3s ease-in-out, left 0.6s ease-in-out;
 }
 
-[data-slide="7"] .briliant {
+#harvestSeason [data-slide="7"] .briliant {
   position: absolute;
   right: 0;
   top: 0;
@@ -2780,7 +2780,7 @@ body {
   transition: opacity 0.6s ease-in-out;
 }
 
-[data-slide="7"] .briliant__image {
+#harvestSeason [data-slide="7"] .briliant__image {
   z-index: 4;
   left: 51vw;
   top: 48.3vh;
@@ -2790,7 +2790,7 @@ body {
   transition: opacity 0.6s ease-in-out;
 }
 
-[data-slide="7"] .briliant__nameplate {
+#harvestSeason [data-slide="7"] .briliant__nameplate {
   position: absolute;
   top: 60.9vh;
   left: 67.7vw;
@@ -2799,7 +2799,7 @@ body {
   transition: opacity 0.6s ease-in-out;
 }
 
-.harvest-season__slides[data-step="12"] [data-slide="7"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="12"] [data-slide="7"] .painting__image {
   top: 0;
   left: 0;
   bottom: 0;
@@ -2807,11 +2807,11 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="12"] [data-slide="7"] .painting__nameplate {
+#harvestSeason .harvest-season__slides[data-step="12"] [data-slide="7"] .painting__nameplate {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="13"] [data-slide="7"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="13"] [data-slide="7"] .painting__image {
   top: 7.36vh;
   left: 5.55vw;
   bottom: 9.73vh;
@@ -2819,24 +2819,24 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="13"] [data-slide="7"] .painting__nameplate {
+#harvestSeason .harvest-season__slides[data-step="13"] [data-slide="7"] .painting__nameplate {
   opacity: 1;
   left: 52.15vw;
 }
 
-.harvest-season__slides[data-step="13"] [data-slide="7"] .briliant,
-.harvest-season__slides[data-step="13"] [data-slide="7"] .briliant__image,
-.harvest-season__slides[data-step="13"] [data-slide="7"] .briliant__nameplate {
+#harvestSeason .harvest-season__slides[data-step="13"] [data-slide="7"] .briliant,
+#harvestSeason .harvest-season__slides[data-step="13"] [data-slide="7"] .briliant__image,
+#harvestSeason .harvest-season__slides[data-step="13"] [data-slide="7"] .briliant__nameplate {
   opacity: 1;
 }
 
-[data-slide="8"] .painting__image {
+#harvestSeason [data-slide="8"] .painting__image {
   transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out, right 0.6s ease-in-out, left 0.6s ease-in-out;
   z-index: 5;
   opacity: 0;
 }
 
-[data-slide="8"] .painting__nameplate {
+#harvestSeason [data-slide="8"] .painting__nameplate {
   z-index: 4;
   position: absolute;
   top: 4.47vh;
@@ -2844,15 +2844,15 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-[data-slide="8"] .painting__nameplate.first {
+#harvestSeason [data-slide="8"] .painting__nameplate.first {
   left: 72.3vw;
 }
 
-[data-slide="8"] .painting__nameplate.second {
+#harvestSeason [data-slide="8"] .painting__nameplate.second {
   left: 9.37vw;
 }
 
-[data-slide="8"] .painting {
+#harvestSeason [data-slide="8"] .painting {
   position: absolute;
   right: 0;
   top: 0;
@@ -2864,7 +2864,7 @@ body {
   transition: opacity 0.6s ease-in-out, right 0.6s ease-in-out;
 }
 
-[data-slide="8"] .briliant__image {
+#harvestSeason [data-slide="8"] .briliant__image {
   z-index: 4;
   left: 74.5vw;
   top: 3vh;
@@ -2874,7 +2874,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-[data-slide="8"] .briliant__nameplate {
+#harvestSeason [data-slide="8"] .briliant__nameplate {
   position: absolute;
   top: 38vh;
   left: 76vw;
@@ -2883,7 +2883,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.harvest-season__slides[data-step="14"] [data-slide="8"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="14"] [data-slide="8"] .painting__image {
   top: 0;
   left: 0;
   bottom: 0;
@@ -2891,16 +2891,16 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="14"] [data-slide="8"] .painting__nameplate.first {
+#harvestSeason .harvest-season__slides[data-step="14"] [data-slide="8"] .painting__nameplate.first {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 
-.harvest-season__slides[data-step="14"] [data-slide="8"] .painting {
+#harvestSeason .harvest-season__slides[data-step="14"] [data-slide="8"] .painting {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="15"] [data-slide="8"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="15"] [data-slide="8"] .painting__image {
   left: 9.37vw;
   top: 21.8vh;
   right: 42.6vw;
@@ -2908,30 +2908,30 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="15"] [data-slide="8"] .painting {
+#harvestSeason .harvest-season__slides[data-step="15"] [data-slide="8"] .painting {
   right: 30vw;
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="15"] [data-slide="8"] .painting__nameplate.second {
+#harvestSeason .harvest-season__slides[data-step="15"] [data-slide="8"] .painting__nameplate.second {
   opacity: 1;
   transition: opacity 0.5s ease-in-out 0.3s;
 }
 
-.harvest-season__slides[data-step="15"] [data-slide="8"] .briliant,
-.harvest-season__slides[data-step="15"] [data-slide="8"] .briliant__image,
-.harvest-season__slides[data-step="15"] [data-slide="8"] .briliant__nameplate {
+#harvestSeason .harvest-season__slides[data-step="15"] [data-slide="8"] .briliant,
+#harvestSeason .harvest-season__slides[data-step="15"] [data-slide="8"] .briliant__image,
+#harvestSeason .harvest-season__slides[data-step="15"] [data-slide="8"] .briliant__nameplate {
   opacity: 1;
   transition: opacity 0.6s ease-in-out 0.2s;
 }
 
-[data-slide="9"] .painting__image {
+#harvestSeason [data-slide="9"] .painting__image {
   transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out, right 0.6s ease-in-out, left 0.6s ease-in-out;
   z-index: 5;
   opacity: 0;
 }
 
-[data-slide="9"] .painting__nameplate {
+#harvestSeason [data-slide="9"] .painting__nameplate {
   z-index: 4;
   position: absolute;
   top: 67.5vh;
@@ -2939,16 +2939,16 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-[data-slide="9"] .painting__nameplate.first {
+#harvestSeason [data-slide="9"] .painting__nameplate.first {
   left: 6.52vw;
 }
 
-[data-slide="9"] .painting__nameplate.second {
+#harvestSeason [data-slide="9"] .painting__nameplate.second {
   left: 26.7vw;
   text-align: right;
 }
 
-[data-slide="9"] .briliant {
+#harvestSeason [data-slide="9"] .briliant {
   position: absolute;
   left: 0;
   top: 0;
@@ -2960,7 +2960,7 @@ body {
   transition: opacity 0.6s ease-in-out;
 }
 
-[data-slide="9"] .briliant__image {
+#harvestSeason [data-slide="9"] .briliant__image {
   z-index: 4;
   left: 6vw;
   top: 42vh;
@@ -2970,7 +2970,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-[data-slide="9"] .briliant__nameplate {
+#harvestSeason [data-slide="9"] .briliant__nameplate {
   position: absolute;
   top: 69.5vh;
   left: 7.2vw;
@@ -2979,7 +2979,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.harvest-season__slides[data-step="16"] [data-slide="9"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="16"] [data-slide="9"] .painting__image {
   top: 0;
   right: 0;
   bottom: 0;
@@ -2987,16 +2987,16 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="16"] [data-slide="9"] .painting__nameplate.first {
+#harvestSeason .harvest-season__slides[data-step="16"] [data-slide="9"] .painting__nameplate.first {
   opacity: 1;
   transition: opacity 0.3s ease-in-out 0.3s;
 }
 
-.harvest-season__slides[data-step="16"] [data-slide="9"] .painting {
+#harvestSeason .harvest-season__slides[data-step="16"] [data-slide="9"] .painting {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="17"] [data-slide="9"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="17"] [data-slide="9"] .painting__image {
   left: 51.9vw;
   top: 7.9vh;
   right: 4vw;
@@ -3004,34 +3004,34 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="17"] [data-slide="9"] .painting {
+#harvestSeason .harvest-season__slides[data-step="17"] [data-slide="9"] .painting {
   right: 30vw;
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="17"] [data-slide="9"] .briliant {
+#harvestSeason .harvest-season__slides[data-step="17"] [data-slide="9"] .briliant {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="17"] [data-slide="9"] .painting__nameplate.second {
+#harvestSeason .harvest-season__slides[data-step="17"] [data-slide="9"] .painting__nameplate.second {
   opacity: 1;
   transition: opacity 0.3s ease-in-out 0.3s;
 }
 
-.harvest-season__slides[data-step="17"] [data-slide="9"] .briliant,
-.harvest-season__slides[data-step="17"] [data-slide="9"] .briliant__image,
-.harvest-season__slides[data-step="17"] [data-slide="9"] .briliant__nameplate {
+#harvestSeason .harvest-season__slides[data-step="17"] [data-slide="9"] .briliant,
+#harvestSeason .harvest-season__slides[data-step="17"] [data-slide="9"] .briliant__image,
+#harvestSeason .harvest-season__slides[data-step="17"] [data-slide="9"] .briliant__nameplate {
   opacity: 1;
   transition: opacity 0.6s ease-in-out 0.2s;
 }
 
-[data-slide="10"] .painting__image {
+#harvestSeason [data-slide="10"] .painting__image {
   transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out, right 0.6s ease-in-out, left 0.6s ease-in-out;
   z-index: 5;
   opacity: 0;
 }
 
-[data-slide="10"] .painting__nameplate {
+#harvestSeason [data-slide="10"] .painting__nameplate {
   z-index: 4;
   position: absolute;
   top: 7.36vh;
@@ -3040,7 +3040,7 @@ body {
   transition: left 0.6s ease-in-out;
 }
 
-[data-slide="10"] .painting {
+#harvestSeason [data-slide="10"] .painting {
   position: absolute;
   right: 0;
   top: 0;
@@ -3052,7 +3052,7 @@ body {
   transition: opacity 0.6s ease-in-out, right 0.6s ease-in-out;
 }
 
-[data-slide="10"] .briliant__image {
+#harvestSeason [data-slide="10"] .briliant__image {
   z-index: 4;
   left: 61.5vw;
   top: 54.7vh;
@@ -3062,7 +3062,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-[data-slide="10"] .briliant__nameplate {
+#harvestSeason [data-slide="10"] .briliant__nameplate {
   position: absolute;
   top: 58.5vh;
   left: 77vw;
@@ -3071,7 +3071,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.harvest-season__slides[data-step="18"] [data-slide="10"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="18"] [data-slide="10"] .painting__image {
   top: 0;
   left: 0;
   bottom: 0;
@@ -3079,15 +3079,15 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="18"] [data-slide="10"] .painting__nameplate {
+#harvestSeason .harvest-season__slides[data-step="18"] [data-slide="10"] .painting__nameplate {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="18"] [data-slide="10"] .painting {
+#harvestSeason .harvest-season__slides[data-step="18"] [data-slide="10"] .painting {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="19"] [data-slide="10"] .painting__image {
+#harvestSeason .harvest-season__slides[data-step="19"] [data-slide="10"] .painting__image {
   left: 6.3vw;
   top: 7.37vh;
   right: 41.6vw;
@@ -3095,18 +3095,18 @@ body {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="19"] [data-slide="10"] .painting {
+#harvestSeason .harvest-season__slides[data-step="19"] [data-slide="10"] .painting {
   opacity: 1;
 }
 
-.harvest-season__slides[data-step="19"] [data-slide="10"] .painting__nameplate {
+#harvestSeason .harvest-season__slides[data-step="19"] [data-slide="10"] .painting__nameplate {
   opacity: 1;
   left: 62.56vw;
 }
 
-.harvest-season__slides[data-step="19"] [data-slide="10"] .briliant,
-.harvest-season__slides[data-step="19"] [data-slide="10"] .briliant__image,
-.harvest-season__slides[data-step="19"] [data-slide="10"] .briliant__nameplate {
+#harvestSeason .harvest-season__slides[data-step="19"] [data-slide="10"] .briliant,
+#harvestSeason .harvest-season__slides[data-step="19"] [data-slide="10"] .briliant__image,
+#harvestSeason .harvest-season__slides[data-step="19"] [data-slide="10"] .briliant__nameplate {
   opacity: 1;
   transition: opacity 0.6s ease-in-out 0.2s;
 }
