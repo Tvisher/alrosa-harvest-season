@@ -3111,6 +3111,55 @@ body {
   transition: opacity 0.6s ease-in-out 0.2s;
 }
 
+#harvestSeason .pagination_wrapper {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 38px;
+}
+
+#harvestSeason #paginationSliser {
+  width: 220px;
+  height: 35px;
+}
+
+#harvestSeason #paginationSliser .swiper-slide {
+  cursor: pointer;
+  width: 30px;
+  height: 100%;
+  padding: 15px;
+  position: relative;
+}
+
+#harvestSeason #paginationSliser .swiper-slide:before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(34, 33, 30, 0.5);
+  width: 2px;
+  height: 2px;
+  border: 1px solid transparent;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+#harvestSeason #paginationSliser .swiper-slide.swiper-slide-visible.swiper-slide-thumb-active:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  background: transparent;
+  width: 10px;
+  height: 10px;
+  border-color: #22211e;
+}
+
 @media (min-device-width: 320px) and (max-device-width: 900px) and (orientation: landscape) {
   .slider-component__sheel .slider-slides {
     height: calc(100% - 40px);

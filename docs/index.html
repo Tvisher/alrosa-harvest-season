@@ -23,7 +23,11 @@
         <div class="harvest-season__wrapper">
             <div class="swiper" id="harvestSeasonSlider">
                 <div class="swiper-wrapper"></div>
-                <div class="swiper-pagination"></div>
+            </div>
+            <div class="pagination_wrapper">
+                <div class="swiper" id="paginationSliser">
+                    <div class="swiper-wrapper"></div>
+                </div>
             </div>
             <div class="harvest-season__slides" id="harvestSeasonContainer" data-step="0">
                 <div class="harvest-season__slide" data-slide="1">
@@ -410,15 +414,28 @@
         if (harvestSeasonSection) {
             const customSlider = document.querySelector('#harvestSeasonContainer');
             let sliderDirection = null;
+            const sliderSteps = 19;
 
-            const swiper = new Swiper("#harvestSeasonSlider", {
+            const paginationSliser = new Swiper("#paginationSliser", {
+                // spaceBetween: 10,
+                slidesPerView: 7,
+                freeMode: true,
+                watchSlidesProgress: true,
+                on: {
+                    init(slider) {
+                        for (let index = 0; index < sliderSteps; index++) {
+                            const sliderStep = index + 1;
+                            slider.addSlide(index, `<div class="swiper-slide"></div>`);
+                        }
+                    }
+                }
+            });
+            const harvestSeasonSlider = new Swiper("#harvestSeasonSlider", {
                 slidesPerView: 1,
                 speed: 1000,
-                // spaceBetween: 30,
                 mousewheel: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
+                thumbs: {
+                    swiper: paginationSliser,
                 },
                 on: {
                     init(slider) {
