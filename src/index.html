@@ -23,6 +23,8 @@
         <div class="harvest-season__wrapper">
             <div class="swiper" id="harvestSeasonSlider">
                 <div class="swiper-wrapper"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
             <div class="pagination_wrapper">
                 <div class="swiper" id="paginationSliser">
@@ -417,7 +419,6 @@
             const sliderSteps = 19;
 
             const paginationSliser = new Swiper("#paginationSliser", {
-                // spaceBetween: 10,
                 slidesPerView: 7,
                 freeMode: true,
                 watchSlidesProgress: true,
@@ -434,6 +435,10 @@
                 slidesPerView: 1,
                 speed: 1000,
                 mousewheel: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
                 thumbs: {
                     swiper: paginationSliser,
                 },

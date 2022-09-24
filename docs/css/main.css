@@ -3113,11 +3113,11 @@ body {
 
 #harvestSeason .pagination_wrapper {
   position: absolute;
-  bottom: 25px;
+  bottom: 3.3vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  width: 300px;
+  width: 20.8vw;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 38px;
 }
