@@ -1107,6 +1107,33 @@
     border-radius: 38px;
   }
 
+  .pagination-button-next,
+  .pagination-button-prev {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    width: 2vw;
+    height: 2vw;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.55vw 2vh;
+    &.swiper-button-disabled {
+      opacity: 0.4;
+      padding: 10px;
+    }
+  }
+
+  .pagination-button-prev {
+    left: 1vw;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='17' viewBox='0 0 10 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9 1L1 8.5L9 16' stroke='%2322211E' stroke-opacity='0.5'/%3e%3c/svg%3e ");
+  }
+
+  .pagination-button-next {
+    right: 1vw;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='17' viewBox='0 0 10 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 1L9 8.5L1 16' stroke='%2322211E' stroke-opacity='0.5'/%3e%3c/svg%3e ");
+  }
+
   #paginationSliser {
     width: 15.3vw;
     height: 100%;
