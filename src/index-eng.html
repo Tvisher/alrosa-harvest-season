@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitename</title>
+    <!-- preload fonts -->
+    <link rel="preload" href="./fonts/Avenir-Roman.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Golos-Text_Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Radley-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Radley-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.min.css">
+    <script> </script>
+</head>
+
+<body>
+    <header style="height:63px; display: flex;align-items: center;justify-content: center;border-bottom: 1px solid #E7E7E7;">HEADER</header>
+    <section class="harvest-season" id="harvestSeason">
+        <div class="harvest-season__wrapper">
+            <div class="swiper" id="harvestSeasonSlider">
+                <div class="swiper-wrapper"></div>
+            </div>
+            <div class="pagination_wrapper">
+                <div class="swiper" id="paginationSliser">
+                    <div class="swiper-wrapper"></div>
+                </div>
+                <div class="pagination-button-prev"></div>
+                <div class="pagination-button-next"></div>
+            </div>
+            <div class="harvest-season__slides" id="harvestSeasonContainer" data-step="0">
+                <div class="harvest-season__slide" data-slide="1">
+                    <div class="main-slide">
+                        <div class="main-slide__images">
+                            <div class="images-col">
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-1.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-4.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-7.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="images-col">
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-2.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-5.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-8.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="images-col">
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-3.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-6.jpg" alt="">
+                                </div>
+                                <div class="main-slide__image">
+                                    <img src="@img/img-thumb-9.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-slide__content">
+                            <h1 class="main-slide__title">Harvest<br>season</h1>
+                            <p class="main-slide__descr">Autumn harvest is something that connects people from around the world. It also has always inspired artists. We chose some artworks and added diamond sparkles to them. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="2">
+                    <div class="slide-container">
+                        <div class="painting__image">
+                            <img src="@img/slide-1-img.jpg" alt="">
+                        </div>
+                        <div class="painting">
+
+                        </div>
+                        <div class="painting__nameplate">
+                            <div class="nameplate__name eng">Still Life with Quinces</div>
+                            <div class="nameplate__auth">by Vincent van Gogh</div>
+                            <div class="nameplate__date">1887–1888</div>
+                        </div>
+                        <div class="painting__nameplate step-2">
+                            <div class="nameplate__name eng">Still Life with Quinces</div>
+                            <div class="nameplate__auth">by Vincent van Gogh</div>
+                            <div class="nameplate__date">1887–1888</div>
+                        </div>
+                        <div class="briliant">
+                            <div class="briliant__image">
+                                <img src="@img/slide-1-briliant.png" alt="">
+                            </div>
+                            <div class="briliant__nameplate">
+                                <div class="briliant__info">
+                                    weight:
+                                    <span class="cursive-bold">14,32 carats</span>
+                                </div>
+                                <div class="briliant__info">
+                                    color:
+                                    <span class="cursive-bold">Fancy Vivid Yellow</span>
+                                </div>
+                                <div class="briliant__info">
+                                    cut:
+                                    <span class="cursive-bold">pear</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="3">
+                    <div class="slide-container">
+                        <div class="painting__nameplate">
+                            <div class="nameplate__name eng">Space Fruit </div>
+                            <div class="nameplate__auth">by Andy Warhol</div>
+                            <div class="nameplate__date">1978</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="@img/slide-2-img.jpg" alt="">
+                        </div>
+                        <div class="briliant">
+                            <div class="briliant__image">
+                                <img src="@img/slide-2-briliant.png" alt="">
+                            </div>
+                            <div class="briliant__nameplate">
+                                <div class="briliant__info">
+                                    weight:
+                                    <span class="cursive-bold">1,15 carats</span>
+                                </div>
+                                <div class="briliant__info">
+                                    color:
+                                    <span class="cursive-bold">Fancy Light Yellow</span>
+                                </div>
+                                <div class="briliant__info">
+                                    cut:
+                                    <span class="cursive-bold">marquise</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="4">
+                    <div class="slide-container">
+                        <div class="painting__nameplate">
+                            <div class="nameplate__name eng">Rye Harvest </div>
+                            <div class="nameplate__auth">by Kazimir Severinovich Malevich</div>
+                            <div class="nameplate__date">1912</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="@img/slide-3-img.jpg" alt="">
+                        </div>
+                        <div class="briliant">
+                            <div class="briliant__image">
+                                <img src="@img/slide-3-briliant.png" alt="">
+                            </div>
+                            <div class="briliant__nameplate">
+                                <div class="briliant__info">
+                                    weight:
+                                    <span class="cursive-bold">10,07 carats</span>
+                                </div>
+                                <div class="briliant__info">
+                                    color:
+                                    <span class="cursive-bold">colorless, D</span>
+                                </div>
+                                <div class="briliant__info">
+                                    cut:
+                                    <span class="cursive-bold">Emerald cut</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="5">
+                    <div class="slide-container">
+                        <div class="painting__nameplate">
+                            <div class="nameplate__name eng">Still Life With Cherries And Peaches </div>
+                            <div class="nameplate__auth">by Paul Cezanne</div>
+                            <div class="nameplate__date">1885–1987</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="@img/slide-4-img.jpg" alt="">
+                        </div>
+                        <div class="briliant__image first">
+                            <img src="@img/slide-4-briliant.png" alt="">
+                        </div>
+                        <div class="briliant__nameplate first">
+                            <div class="briliant__info">
+                                weight:
+                                <span class="cursive-bold">1,01 carats</span>
+                            </div>
+                            <div class="briliant__info">
+                                color:
+                                <span class="cursive-bold">Fancy Deep Orangy Yellowish Brown</span>
+                            </div>
+                            <div class="briliant__info">
+                                cut:
+                                <span class="cursive-bold">cushion</span>
+                            </div>
+                        </div>
+                        <div class="briliant__image second">
+                            <img src="@img/slide-4.1-briliant.png" alt="">
+                        </div>
+                        <div class="briliant__nameplate second">
+                            <div class="briliant__info">
+                                weight:
+                                <span class="cursive-bold"> 0,4 carats</span>
+                            </div>
+                            <div class="briliant__info">
+                                color:
+                                <span class="cursive-bold">Fancy Intense Purple</span>
+                            </div>
+                            <div class="briliant__info">
+                                cut:
+                                <span class="cursive-bold">cushion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="6">
+                    <div class="slide-container">
+                        <div class="painting__nameplate">
+                            <div class="nameplate__name eng">Jar Of Peaches </div>
+                            <div class="nameplate__auth">by Claude Monet</div>
+                            <div class="nameplate__date">1866</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="@img/slide-5-img.jpg" alt="">
+                        </div>
+                        <div class="briliant">
+                            <div class="briliant__image">
+                                <img src="@img/slide-5-briliant.png" alt="">
+                            </div>
+                            <div class="briliant__nameplate">
+                                <div class="briliant__info">
+                                    weight:
+                                    <span class="cursive-bold">4,04 carats</span>
+                                </div>
+                                <div class="briliant__info">
+                                    color:
+                                    <span class="cursive-bold">Fancy Light Yellow</span>
+                                </div>
+                                <div class="briliant__info">
+                                    cut:
+                                    <span class="cursive-bold">oval</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="7">
+                    <div class="slide-container">
+                        <div class="painting__nameplate">
+                            <div class="nameplate__name eng">Woman holding a fruit</div>
+                            <div class="nameplate__auth">by Paul Gauguin </div>
+                            <div class="nameplate__date">1893</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="@img/slide-6-img.jpg" alt="">
+                        </div>
+                        <div class="briliant"></div>
+                        <div class="briliant__image">
+                            <img src="@img/slide-6-briliant.png" alt="">
+                        </div>
+                        <div class="briliant__nameplate">
+                            <div class="briliant__info">
+                                weight:
+                                <span class="cursive-bold">1,03 carats</span>
+                            </div>
+                            <div class="briliant__info">
+                                color:
+                                <span class="cursive-bold">Fancy Vivid Yellow </span>
+                            </div>
+                            <div class="briliant__info">
+                                cut:
+                                <span class="cursive-bold">trilliant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="8">
+                    <div class="slide-container">
+                        <div class="painting__nameplate first">
+                            <div class="nameplate__name eng">Plate with Plums and Morello Cherries</div>
+                            <div class="nameplate__auth">by Juan van der Hamen </div>
+                            <div class="nameplate__date">1631</div>
+                        </div>
+                        <div class="painting__nameplate second">
+                            <div class="nameplate__name eng">Plate with Plums and Morello Cherries</div>
+                            <div class="nameplate__auth">by Juan van der Hamen </div>
+                            <div class="nameplate__date">1631</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="@img/slide-7-img.jpg" alt="">
+                        </div>
+                        <div class="briliant"></div>
+                        <div class="briliant__image">
+                            <img src="@img/slide-7-briliant.png" alt="">
+                        </div>
+                        <div class="briliant__nameplate">
+                            <div class="briliant__info">
+                                weight:
+                                <span class="cursive-bold">0,56 carats</span>
+                            </div>
+                            <div class="briliant__info">
+                                color:
+                                <span class="cursive-bold">Fancy Dark Gray-Violet</span>
+                            </div>
+                            <div class="briliant__info">
+                                cut:
+                                <span class="cursive-bold">oval</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="9">
+                    <div class="slide-container">
+                        <div class="painting__nameplate ">
+                            <div class="nameplate__name eng">Fruit bowl with flowers</div>
+                            <div class="nameplate__auth">by Jan Davidsz. de Heem</div>
+                            <div class="nameplate__date">First half of XVII century</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="@img/slide-8-img.jpg" alt="">
+                        </div>
+                        <div class="briliant"></div>
+                        <div class="briliant__image">
+                            <img src="@img/slide-8-briliant.png" alt="">
+                        </div>
+                        <div class="briliant__nameplate">
+                            <div class="briliant__info">
+                                weight:
+                                <span class="cursive-bold">0,11 carats</span>
+                            </div>
+                            <div class="briliant__info">
+                                color:
+                                <span class="cursive-bold">Fancy Vivid Pink</span>
+                            </div>
+                            <div class="briliant__info">
+                                cut:
+                                <span class="cursive-bold">round</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="harvest-season__slide" data-slide="10">
+                    <div class="slide-container">
+                        <div class="painting__nameplate">
+                            <div class="nameplate__name eng">Apes in the Orange Grove</div>
+                            <div class="nameplate__auth">by Henri Rousseau</div>
+                            <div class="nameplate__date">1910</div>
+                        </div>
+                        <div class="painting"></div>
+                        <div class="painting__image">
+                            <img src="@img/slide-9-img.jpg" alt="">
+                        </div>
+                        <div class="briliant"></div>
+                        <div class="briliant__image">
+                            <img src="@img/slide-9-briliant.png" alt="">
+                        </div>
+                        <div class="briliant__nameplate">
+                            <div class="briliant__info">
+                                weight:
+                                <span class="cursive-bold">1,01 carats</span>
+                            </div>
+                            <div class="briliant__info">
+                                color:
+                                <span class="cursive-bold">Fancy Deep Orangy Yellow</span>
+                            </div>
+                            <div class="briliant__info">
+                                cut:
+                                <span class="cursive-bold">round </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-component__plug">
+            <span class="slider-component__plug-title">Rotate the phone screen</span>
+            <div class="slider-component__plug-img">
+                <svg width="194" height="161" viewBox="0 0 194 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M150 59L156.491 36.837L134.052 42.297L150 59ZM112 23C125.904 23 137.971 30.8819 143.969 42.4306L147.519 40.5869C140.859 27.7655 127.455 19 112 19V23Z" fill="#B19673" />
+                    <rect x="3" y="159" width="157" height="89" rx="8" transform="rotate(-90 3 159)" fill="white" stroke="#E8E0D5" stroke-width="4" />
+                    <rect x="31" width="34" height="11" rx="3" fill="#E8E0D5" />
+                    <rect x="34" y="70" width="157" height="89" rx="8" fill="white" stroke="#B19673" stroke-width="4" />
+                    <rect x="193" y="98" width="34" height="11" rx="3" transform="rotate(90 193 98)" fill="#B19673" />
+                    <path d="M90 108.5L112.5 131M90 108.5L100.5 98M90 108.5H100.5M112.5 131L135 108.5M112.5 131L100.5 108.5M112.5 131L124.5 108.5M135 108.5L124.5 98M135 108.5H124.5M124.5 98V108.5M124.5 98H112.5M100.5 98H112.5M100.5 98V108.5M124.5 108.5L112.5 98M124.5 108.5H100.5M112.5 98L100.5 108.5" stroke="#B19673" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="slider-component__plug-text">данный сервис работает<br>при горизонтальном положении экрана</div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+        const harvestSeasonSection = document.querySelector('#harvestSeason');
+        if (harvestSeasonSection) {
+            const customSlider = document.querySelector('#harvestSeasonContainer');
+
+            let sliderDirection = null;
+            const sliderSteps = 19;
+
+            const paginationSliser = new Swiper("#paginationSliser", {
+                slidesPerView: 7,
+                freeMode: true,
+                watchSlidesProgress: true,
+                on: {
+                    init(slider) {
+                        for (let index = 0; index < sliderSteps; index++) {
+                            const sliderStep = index + 1;
+                            slider.addSlide(index, `<div class="swiper-slide"></div>`);
+                        }
+                    }
+                }
+            });
+            const harvestSeasonSlider = new Swiper("#harvestSeasonSlider", {
+                slidesPerView: 1,
+                speed: 1000,
+                mousewheel: true,
+                navigation: {
+                    nextEl: ".pagination-button-next",
+                    prevEl: ".pagination-button-prev",
+                },
+                thumbs: {
+                    swiper: paginationSliser,
+                },
+                on: {
+                    init(slider) {
+                        const sliderSteps = 19;
+                        for (let index = 0; index < sliderSteps; index++) {
+                            const sliderStep = index + 1;
+                            slider.addSlide(index, `<div class="swiper-slide"></div>`);
+                        }
+                        customSlider.dataset.step = 1;
+                    },
+
+                    activeIndexChange(swiper) {
+                        const stepIndex = swiper.activeIndex + 1
+                        if (((stepIndex % 2 === 0) && sliderDirection < stepIndex)
+                            ||
+                            ((stepIndex % 2 !== 0)) && sliderDirection > stepIndex) {
+                            customSlider.style.opacity = '0'
+                        }
+                        setTimeout(() => {
+                            setTimeout(() => {
+                                customSlider.style.opacity = '1'
+                            }, 200);
+                            sliderDirection = stepIndex;
+                            customSlider.dataset.step = stepIndex;
+                        }, 250);
+                    }
+                }
+            });
+
+            const sliderComponentPlug = document.querySelector('.slider-component__plug');
+
+            function getWindowOrientation(element) {
+                const checkWindowSize = window.innerHeight > window.innerWidth;
+                if (checkWindowSize) {
+                    element.classList.add('show');
+                } else {
+                    element.classList.remove('show');
+                }
+            }
+            if (sliderComponentPlug) {
+                getWindowOrientation(sliderComponentPlug);
+                window.addEventListener('resize', (e) => {
+                    getWindowOrientation(sliderComponentPlug);
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

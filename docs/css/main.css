@@ -2205,6 +2205,7 @@ body {
 }
 
 #harvestSeason .main-slide__title {
+  text-transform: uppercase;
   font-family: "Sylfaen";
   font-style: normal;
   font-weight: 400;
@@ -2249,6 +2250,11 @@ body {
   color: #22211e;
   text-transform: uppercase;
   margin-bottom: calc((1vw + 1vh) * 0.6);
+}
+
+#harvestSeason .nameplate__name.eng {
+  line-height: 100%;
+  margin-bottom: calc((1vw + 1vh) * 0.2);
 }
 
 #harvestSeason .nameplate__date {
@@ -2500,7 +2506,7 @@ body {
   z-index: 5;
   position: absolute;
   left: 80vw;
-  top: 6.6vh;
+  top: 6.5vh;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, left 0.6s ease-in-out;
 }
