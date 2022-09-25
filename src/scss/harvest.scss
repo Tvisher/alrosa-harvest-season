@@ -299,7 +299,9 @@
       top: 7.37vh;
       left: 79vw;
       &.step-2 {
-        top: 73vh;
+        // top: 73vh;
+        top: initial;
+        bottom: 9vh;
         left: 43.75vw;
       }
     }
@@ -336,7 +338,7 @@
       top: 0;
       left: 0;
       bottom: 0;
-      right: calc($index * 19.14);
+      right: 26.6vw;
       opacity: 1;
     }
     .painting__nameplate {
@@ -654,10 +656,10 @@
       position: absolute;
       right: 0;
       height: 100%;
-      background-color: #ddd9cf;
+
       z-index: 3;
       width: 100%;
-      transition: width 0.6s ease-in-out;
+      transition: width 0.6s ease-in-out, background-color 0.6s ease-in-out;
     }
     .painting__image {
       transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
@@ -714,6 +716,7 @@
   .harvest-season__slides[data-step="11"] [data-slide="6"] {
     .painting {
       width: 73.5%;
+      background-color: #ddd9cf;
     }
     .briliant {
       opacity: 1;
@@ -918,14 +921,11 @@
       position: absolute;
       top: 67.5vh;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      &.first {
-        left: 6.52vw;
-      }
-      &.second {
-        left: 26.7vw;
-        text-align: right;
-      }
+      // transition: opacity 0.3s ease-in-out;
+      left: inherit;
+      right: 70vw;
+      text-align: right;
+      transition: right 0.6s ease-in-out, top 0.6s ease-in-out;
     }
 
     .briliant {
@@ -968,10 +968,7 @@
       opacity: 1;
     }
     .painting__nameplate {
-      &.first {
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out 0.3s;
-      }
+      opacity: 1;
     }
     .painting {
       opacity: 1;
@@ -996,10 +993,8 @@
     }
 
     .painting__nameplate {
-      &.second {
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out 0.3s;
-      }
+      right: 50vw;
+      opacity: 1;
     }
     .briliant,
     .briliant__image,
@@ -1141,7 +1136,7 @@
       cursor: pointer;
       width: calc($index * 0.09);
       height: 100%;
-      padding: 15px;
+      padding: 1vw;
       position: relative;
       &:before {
         border-radius: 50%;
@@ -1166,10 +1161,349 @@
         left: 50%;
         top: 50%;
         background: transparent;
-        width: 10px;
-        height: 10px;
+        width: 0.7vw;
+        height: 0.7vw;
         border-color: #22211e;
       }
+    }
+  }
+
+  @media (max-width: 1190px) {
+    .pagination_wrapper {
+      bottom: 0;
+    }
+    .briliant__info,
+    .cursive-bold {
+      font-size: calc((1vw + 1vh) * 0.93);
+      letter-spacing: 0.5px;
+    }
+    .nameplate__auth {
+      font-size: calc($index * 1.04);
+      letter-spacing: 0.5px;
+    }
+    .nameplate__name {
+      font-size: calc($index * 1.04);
+      letter-spacing: 1.8px;
+      margin-bottom: calc((1vw + 1vh) * 0.7);
+    }
+    .nameplate__date {
+      font-size: calc($index * 1.04);
+      letter-spacing: 1.5px;
+    }
+    .main-slide__content {
+      padding-top: 15vh;
+      padding-left: 8vw;
+      padding-right: 6.5vw;
+    }
+    .main-slide__descr {
+      font-size: calc($index * 1.04);
+    }
+    .harvest-season__slides[data-step="2"] [data-slide="2"] .painting__image {
+      right: 43.6vw;
+    }
+    .harvest-season__slides[data-step="2"]
+      [data-slide="2"]
+      .painting__nameplate {
+      top: 14vh;
+      left: 59.5vw;
+    }
+    .harvest-season__slides[data-step="3"] [data-slide="2"] .painting__image {
+      top: 7.5vh;
+      left: 43.5vw;
+      bottom: 24.4vh;
+      right: 11vh;
+    }
+    [data-slide="2"] .painting__nameplate.step-2 {
+      left: 43.5vw;
+    }
+
+    .harvest-season__slides[data-step="3"] [data-slide="2"] .painting {
+      width: 64.5%;
+    }
+    [data-slide="2"] .briliant__image {
+      top: 10vh;
+      left: 9vw;
+      width: 19vw;
+      height: 30vh;
+    }
+    [data-slide="2"] .briliant__nameplate {
+      top: 46vh;
+      left: 11vw;
+    }
+
+    [data-slide="3"] .painting__nameplate {
+      left: 4.5vw;
+      width: 18vw;
+      top: 14vh;
+      transition: width 0.6s ease-in-out, left 0.6s ease-in-out,
+        top 0.6s ease-in-out;
+    }
+    .harvest-season__slides[data-step="4"] [data-slide="3"] .painting__image {
+      left: 35.5vw;
+    }
+    .harvest-season__slides[data-step="5"] [data-slide="3"] .painting__image {
+      top: 21vh;
+      left: 9.5vw;
+      bottom: 9vh;
+      right: 43.5vw;
+    }
+
+    .harvest-season__slides[data-step="5"]
+      [data-slide="3"]
+      .painting__nameplate {
+      left: 9.5vw;
+      width: 50vw;
+      top: 5vh;
+    }
+    .harvest-season__slides[data-step="5"] [data-slide="3"] .painting {
+      width: 64.3%;
+    }
+    [data-slide="3"] .briliant__image {
+      left: 70vw;
+      top: 19vh;
+      width: 25vw;
+      height: 26vh;
+    }
+    [data-slide="3"] .briliant__nameplate {
+      bottom: 29vh;
+      left: 71vw;
+    }
+
+    .harvest-season__slides[data-step="6"] [data-slide="4"] .painting__image {
+      left: 7.8vw;
+      right: 28vw;
+    }
+    [data-slide="4"] .painting__nameplate {
+      transition: top 0.6s ease-in-out, left 0.6s ease-in-out;
+      left: 76vw;
+      top: 13.6vh;
+    }
+    .harvest-season__slides[data-step="7"]
+      [data-slide="4"]
+      .painting__nameplate {
+      left: 82.7vw;
+      top: 15vh;
+    }
+    .harvest-season__slides[data-step="7"] [data-slide="4"] .painting__image {
+      left: 38.4vw;
+      right: 20.3vw;
+      top: 10.5vh;
+      bottom: 11vh;
+    }
+    [data-slide="4"] .briliant__image {
+      left: 4.2vw;
+      top: 15vh;
+      width: 19vw;
+      height: 28vh;
+    }
+    [data-slide="4"] .briliant__nameplate {
+      top: 47.5vh;
+      left: 5.6vw;
+      width: 25vw;
+    }
+    .harvest-season__slides[data-step="8"] [data-slide="5"] .painting__image {
+      right: 43.5vw;
+    }
+    [data-slide="5"] .painting__nameplate {
+      transition: bottom 0.6s ease-in-out, left 0.6s ease-in-out;
+      left: 59.25vw;
+      top: initial;
+      bottom: 12.6vh;
+    }
+
+    .harvest-season__slides[data-step="9"] [data-slide="5"] .painting__image {
+      left: 4.25vw;
+      right: 46vw;
+      top: 13.5vh;
+      bottom: 13.7vh;
+    }
+    [data-slide="5"] .briliant__image.first {
+      left: 57.2vw;
+      top: 8.4vh;
+      width: 16vw;
+      height: 24vh;
+    }
+    [data-slide="5"] .briliant__nameplate.first {
+      width: 22vw;
+      top: 12.4vh;
+      left: 75.3vw;
+    }
+    [data-slide="5"] .briliant__image.second {
+      left: 57.4vw;
+      top: 35vh;
+      width: 16vw;
+      height: 26vh;
+    }
+    [data-slide="5"] .briliant__nameplate.second {
+      top: 40.5vh;
+      left: 75.3vw;
+    }
+    .harvest-season__slides[data-step="9"]
+      [data-slide="5"]
+      .painting__nameplate {
+      top: initial;
+      bottom: 5.6vh;
+      left: 59.25vw;
+    }
+
+    .harvest-season__slides[data-step="10"] [data-slide="6"] .painting__image {
+      left: 15.5vw;
+      right: 42.2vw;
+    }
+    [data-slide="6"] .painting__nameplate {
+      transition: top 0.6s ease-in-out, left 0.6s ease-in-out;
+      left: 64.5vw;
+      top: 14vh;
+    }
+    .harvest-season__slides[data-step="11"] [data-slide="6"] .painting__image {
+      left: 36.54vw;
+      right: 30vw;
+      top: 9.2vh;
+      bottom: 8.7vh;
+    }
+    .harvest-season__slides[data-step="11"]
+      [data-slide="6"]
+      .painting__nameplate {
+      left: 73.5vw;
+      top: 7.5vh;
+    }
+    .harvest-season__slides[data-step="11"] [data-slide="6"] .painting {
+      width: 67.5%;
+    }
+    [data-slide="6"] .briliant__image {
+      left: 5.3vw;
+      top: 17.3vh;
+      width: 19vw;
+      height: 36vh;
+    }
+    [data-slide="6"] .briliant__nameplate {
+      bottom: 21vh;
+      left: 7.3vw;
+    }
+    .harvest-season__slides[data-step="12"] [data-slide="7"] .painting__image {
+      right: 43.8vw;
+    }
+    [data-slide="7"] .painting__nameplate {
+      transition: top 0.6s ease-in-out, left 0.6s ease-in-out;
+      left: 59.56vw;
+      top: 13.56vh;
+    }
+    .harvest-season__slides[data-step="13"] [data-slide="7"] .painting__image {
+      top: 6vh;
+      left: 6.55vw;
+      bottom: 5.73vh;
+      right: 56.4vw;
+    }
+    [data-slide="7"] .briliant {
+      width: 51.5vw;
+    }
+    .harvest-season__slides[data-step="13"]
+      [data-slide="7"]
+      .painting__nameplate {
+      left: 55.15vw;
+      top: 8.56vh;
+    }
+    [data-slide="7"] .briliant__image {
+      left: 53vw;
+      top: 46.3vh;
+      width: 16.5vw;
+      height: 36.5vh;
+    }
+    [data-slide="7"] .briliant__nameplate {
+      top: 57.9vh;
+      left: 72vw;
+    }
+    .harvest-season__slides[data-step="14"] [data-slide="8"] .painting__image {
+      right: 37vw;
+    }
+    [data-slide="8"] .painting__nameplate.first {
+      left: 67.5vw;
+      top: 14vh;
+    }
+    [data-slide="8"] .painting__nameplate.second {
+      left: 8.7vw;
+    }
+    .harvest-season__slides[data-step="15"] [data-slide="8"] .painting__image {
+      left: 8.4vw;
+      top: 23.5vh;
+      right: 43.6vw;
+      bottom: 5.78vh;
+    }
+    [data-slide="8"] .briliant__image {
+      left: 69.5vw;
+      top: 16vh;
+      width: 23vw;
+      height: 30.5vh;
+    }
+    [data-slide="8"] .briliant__nameplate {
+      top: 54vh;
+      left: 71.5vw;
+    }
+    .harvest-season__slides[data-step="15"] [data-slide="8"] .painting {
+      right: 36vw;
+    }
+    .harvest-season__slides[data-step="16"] [data-slide="9"] .painting__image {
+      left: 35.6vw;
+    }
+    [data-slide="9"] .painting__nameplate {
+      right: 68vw;
+      top: 13vh;
+    }
+    .harvest-season__slides[data-step="17"] [data-slide="9"] .painting__image {
+      left: 55.9vw;
+      top: 25vh;
+      right: 4.5vw;
+      bottom: 7.9vh;
+    }
+    .harvest-season__slides[data-step="17"]
+      [data-slide="9"]
+      .painting__nameplate {
+      right: 4.5vw;
+      top: 5vh;
+    }
+    [data-slide="9"] .briliant {
+      width: 43.5vw;
+    }
+    [data-slide="9"] .briliant__image {
+      left: 9vw;
+      top: 26vh;
+      width: 22vw;
+      height: 33vh;
+    }
+    [data-slide="9"] .briliant__nameplate {
+      top: 61vh;
+      left: 12.2vw;
+    }
+    .harvest-season__slides[data-step="18"] [data-slide="10"] .painting__image {
+      right: 37vw;
+    }
+    [data-slide="10"] .painting__nameplate {
+      transition: top 0.6s ease-in-out, left 0.6s ease-in-out;
+      top: 14vh;
+      left: 67.7vw;
+    }
+    .harvest-season__slides[data-step="19"] [data-slide="10"] .painting__image {
+      left: 6.3vw;
+      top: 18.37vh;
+      right: 56.6vw;
+      bottom: 17.6vh;
+      opacity: 1;
+    }
+    .harvest-season__slides[data-step="19"]
+      [data-slide="10"]
+      .painting__nameplate {
+      left: 55.5vw;
+      top: 9.5vh;
+    }
+    [data-slide="10"] .briliant__image {
+      left: 54vw;
+      top: 50vh;
+      width: 16vw;
+      height: 27vh;
+    }
+    [data-slide="10"] .briliant__nameplate {
+      top: 57.5vh;
+      left: 72vw;
     }
   }
 }
