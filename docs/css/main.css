@@ -2003,7 +2003,7 @@ body {
 #harvestSeason {
   position: relative;
   background-color: #ddd9cf;
-  height: calc(100% - 64px);
+  height: calc(100vh - 64px);
 }
 
 #harvestSeason .slider-component__plug {
@@ -2060,14 +2060,6 @@ body {
   100% {
     opacity: 1;
   }
-}
-
-#harvestSeason .slider-component__plug {
-  display: none;
-}
-
-#harvestSeason .slider-component__plug.show {
-  display: flex;
 }
 
 #harvestSeason #harvestSeasonSlider {
