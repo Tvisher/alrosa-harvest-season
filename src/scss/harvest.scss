@@ -1,4 +1,45 @@
 #harvestSeason {
+  .slider-component__plug {
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    opacity: 0;
+    visibility: hidden;
+    padding: 50px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+    flex-direction: column;
+    .slider-component__plug-title {
+      text-align: center;
+      font-family: Avenir;
+      font-size: 18px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      letter-spacing: 2.18px;
+      color: #b19673;
+    }
+    .slider-component__plug-img {
+      margin-bottom: 40px;
+    }
+    .slider-component__plug-text {
+      font-size: 16px;
+      font-family: Avenir;
+      text-align: center;
+      font-weight: 400;
+      line-height: 175%;
+      color: #333333;
+    }
+  }
   @keyframes toOpac {
     0% {
       opacity: 0;
@@ -35,7 +76,7 @@
     z-index: 9;
     height: 100%;
     width: 100%;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
     background-color: #fff;
     overflow: hidden;
   }
@@ -101,7 +142,7 @@
   }
   .main-slide__image {
     width: 14.23vw;
-    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
     opacity: 0.3;
     img {
       width: 100%;
@@ -295,8 +336,8 @@
       right: 0;
     }
     .painting__image {
-      transition: top 0.6s ease-in-out, top 0.6s ease-in-out,
-        left 0.6s ease-in-out, right 0.6s ease-in-out, bottom 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, top 0.9s ease-in-out,
+        left 0.9s ease-in-out, right 0.9s ease-in-out, bottom 0.9s ease-in-out;
       opacity: 0;
       z-index: 3;
     }
@@ -307,6 +348,7 @@
       left: 79vw;
       &.step-2 {
         // top: 73vh;
+        display: none;
         top: initial;
         bottom: 9vh;
         left: 43.75vw;
@@ -318,7 +360,7 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
     }
 
     .briliant__image {
@@ -339,9 +381,9 @@
       width: 100%;
     }
     .painting__image {
-      transition: top 0.6s ease-in-out, top 0.6s ease-in-out,
-        left 0.6s ease-in-out, right 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        opacity 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, top 0.9s ease-in-out,
+        left 0.9s ease-in-out, right 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        opacity 0.9s ease-in-out;
       top: 0;
       left: 0;
       bottom: 0;
@@ -350,7 +392,7 @@
     }
     .painting__nameplate {
       opacity: 1;
-      transition: opacity 0.6s ease-in-out 0.5s;
+      transition: opacity 0.9s ease-in-out 0.2s;
       &.step-2 {
         display: none;
       }
@@ -374,7 +416,8 @@
     .painting__nameplate {
       opacity: 0;
       &.step-2 {
-        animation: toOpac 0.6s ease-in-out forwards 0.5s;
+        display: block;
+        animation: toOpac 0.9s ease-in-out forwards 0.5s;
       }
     }
     .briliant {
@@ -387,13 +430,13 @@
       position: absolute;
       height: 100%;
       background-color: #ddd9cf;
-      transition: width 0.6s ease 0.3s, transform 0.6s ease-in-out;
+      transition: width 0.9s ease 0.3s, transform 0.9s ease-in-out;
       z-index: 2;
       transform: translateX(50%);
     }
     .painting__image {
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out;
       opacity: 0;
     }
     .painting__nameplate {
@@ -402,7 +445,7 @@
       left: 8.2vw;
       top: 5.5vh;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
     }
     .briliant {
       position: absolute;
@@ -412,7 +455,7 @@
       height: 100%;
       z-index: 1;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
     }
 
     .briliant__image {
@@ -440,8 +483,8 @@
       left: 33.5vw;
       z-index: 4;
       opacity: 1;
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out, opacity 0.9s ease-in-out;
     }
     .painting__nameplate {
       opacity: 1;
@@ -459,15 +502,15 @@
       bottom: 11vh;
       right: 47.5vw;
       z-index: 4;
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out, opacity 0.9s ease-in-out;
       opacity: 1;
     }
     .painting__nameplate {
       opacity: 1;
     }
     .briliant {
-      transition: opacity 0.6s ease-in-out 0.4s;
+      transition: opacity 0.9s ease-in-out 0.4s;
       opacity: 1;
     }
   }
@@ -481,8 +524,8 @@
       z-index: 3;
     }
     .painting__image {
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out;
       z-index: 3;
       opacity: 0;
     }
@@ -492,7 +535,7 @@
       left: 80vw;
       top: 6.5vh;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out, left 0.6s ease-in-out;
+      transition: opacity 0.6s ease-in-out, left 0.9s ease-in-out;
     }
     .briliant {
       position: absolute;
@@ -503,7 +546,7 @@
       z-index: 1;
       background: #ddd9cf;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
     }
 
     .briliant__image {
@@ -522,7 +565,7 @@
   .harvest-season__slides[data-step="6"] [data-slide="4"] {
     .painting {
       width: 100%;
-      transition: width 0.3s ease-in-out;
+      transition: width 0.6s ease-in-out;
     }
 
     .painting__image {
@@ -570,8 +613,8 @@
       z-index: 2;
     }
     .painting__image {
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out;
       z-index: 3;
       opacity: 0;
     }
@@ -581,11 +624,11 @@
       left: 66.25vw;
       top: 70vh;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out, left 0.6s ease-in-out;
+      // transition: opacity 0.9s ease-in-out, left 0.9s ease-in-out;
     }
 
     .briliant__image {
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
       opacity: 0;
       z-index: 5;
       &.first {
@@ -602,7 +645,7 @@
       }
     }
     .briliant__nameplate {
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
       position: absolute;
       opacity: 0;
       z-index: 5;
@@ -620,9 +663,11 @@
   .harvest-season__slides[data-step="8"] [data-slide="5"] {
     .painting {
       width: 100%;
-      transition: width 0.6s ease-in-out 0s;
+      transition: width 0.9s ease-in-out 0s;
     }
     .painting__image {
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out, opacity 0.9s ease-in-out;
       opacity: 1;
       left: 0;
       right: 37.5vw;
@@ -632,6 +677,7 @@
 
     .painting__nameplate {
       opacity: 1;
+      transition: opacity 0.9s ease-in-out, left 0.9s ease-in-out;
     }
   }
 
@@ -649,6 +695,7 @@
     }
 
     .painting__nameplate {
+      transition: opacity 0.9s ease-in-out, left 0.9s ease-in-out;
       left: 62.5vw;
       opacity: 1;
     }
@@ -666,11 +713,11 @@
 
       z-index: 3;
       width: 100%;
-      transition: width 0.6s ease-in-out, background-color 0.6s ease-in-out;
+      transition: width 0.9s ease-in-out, background-color 0.9s ease-in-out;
     }
     .painting__image {
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out;
       z-index: 3;
       opacity: 0;
     }
@@ -680,7 +727,7 @@
       left: 76.73vw;
       top: 7.56vh;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out, left 0.6s ease-in-out;
+      transition: opacity 0.5s ease-in-out, left 0.9s ease-in-out;
     }
     .briliant {
       position: absolute;
@@ -691,7 +738,7 @@
       z-index: 1;
       background: #fff;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
     }
 
     .briliant__image {
@@ -743,8 +790,8 @@
 
   [data-slide="7"] {
     .painting__image {
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out;
       z-index: 3;
       opacity: 0;
     }
@@ -754,7 +801,7 @@
       left: 47.56vw;
       top: 7.56vh;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out, left 0.6s ease-in-out;
+      transition: opacity 0.5s ease-in-out, left 0.9s ease-in-out;
     }
     .briliant {
       position: absolute;
@@ -765,7 +812,7 @@
       z-index: 3;
       background: #ddd9cf;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
     }
 
     .briliant__image {
@@ -775,7 +822,7 @@
       width: 15.5vw;
       height: 36.5vh;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
     }
     .briliant__nameplate {
       position: absolute;
@@ -783,7 +830,7 @@
       left: 67.7vw;
       z-index: 4;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
     }
   }
 
@@ -821,8 +868,8 @@
 
   [data-slide="8"] {
     .painting__image {
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out;
       z-index: 5;
       opacity: 0;
     }
@@ -837,7 +884,7 @@
         left: 9.37vw;
       }
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
     }
     .painting {
       position: absolute;
@@ -848,7 +895,7 @@
       z-index: 3;
       background: #ddd9cf;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out, right 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out, right 0.9s ease-in-out;
     }
 
     .briliant__image {
@@ -858,7 +905,7 @@
       width: 18vw;
       height: 36.5vh;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
     }
     .briliant__nameplate {
       position: absolute;
@@ -866,7 +913,7 @@
       left: 76vw;
       z-index: 4;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
     }
   }
 
@@ -881,7 +928,7 @@
     .painting__nameplate {
       &.first {
         opacity: 1;
-        transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.8s ease-in-out;
       }
     }
     .painting {
@@ -905,21 +952,21 @@
     .painting__nameplate {
       &.second {
         opacity: 1;
-        transition: opacity 0.5s ease-in-out 0.3s;
+        transition: opacity 0.8s ease-in-out 0.5s;
       }
     }
     .briliant,
     .briliant__image,
     .briliant__nameplate {
       opacity: 1;
-      transition: opacity 0.6s ease-in-out 0.2s;
+      transition: opacity 0.9s ease-in-out 0.3s;
     }
   }
 
   [data-slide="9"] {
     .painting__image {
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out;
       z-index: 5;
       opacity: 0;
     }
@@ -932,7 +979,7 @@
       left: inherit;
       right: 70vw;
       text-align: right;
-      transition: right 0.6s ease-in-out, top 0.6s ease-in-out;
+      transition: right 0.9s ease-in-out, top 0.9s ease-in-out;
     }
 
     .briliant {
@@ -944,7 +991,7 @@
       background-color: #ddd9cf;
       z-index: 2;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out;
     }
 
     .briliant__image {
@@ -954,7 +1001,7 @@
       width: 13vw;
       height: 24.5vh;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
     }
     .briliant__nameplate {
       position: absolute;
@@ -962,7 +1009,7 @@
       left: 7.2vw;
       z-index: 4;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
     }
   }
 
@@ -1007,14 +1054,14 @@
     .briliant__image,
     .briliant__nameplate {
       opacity: 1;
-      transition: opacity 0.6s ease-in-out 0.2s;
+      transition: opacity 0.9s ease-in-out 0.3s;
     }
   }
 
   [data-slide="10"] {
     .painting__image {
-      transition: top 0.6s ease-in-out, bottom 0.6s ease-in-out,
-        right 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, bottom 0.9s ease-in-out,
+        right 0.9s ease-in-out, left 0.9s ease-in-out;
       z-index: 5;
       opacity: 0;
     }
@@ -1024,7 +1071,7 @@
       top: 7.36vh;
       left: 72.7vw;
       opacity: 0;
-      transition: left 0.6s ease-in-out;
+      transition: left 0.9s ease-in-out;
     }
     .painting {
       position: absolute;
@@ -1035,7 +1082,7 @@
       z-index: 3;
       background: #ddd9cf;
       opacity: 0;
-      transition: opacity 0.6s ease-in-out, right 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out, right 0.9s ease-in-out;
     }
 
     .briliant__image {
@@ -1045,7 +1092,7 @@
       width: 15vw;
       height: 27vh;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
     }
     .briliant__nameplate {
       position: absolute;
@@ -1053,7 +1100,7 @@
       left: 77vw;
       z-index: 4;
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
     }
   }
 
@@ -1093,7 +1140,7 @@
     .briliant__image,
     .briliant__nameplate {
       opacity: 1;
-      transition: opacity 0.6s ease-in-out 0.2s;
+      transition: opacity 0.9s ease-in-out 0.3s;
     }
   }
 
@@ -1156,8 +1203,8 @@
         width: 2px;
         height: 2px;
         border: 1px solid transparent;
-        transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
-          border-color 0.2s ease-in-out;
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+          border-color 0.3s ease-in-out;
       }
     }
 
@@ -1242,8 +1289,8 @@
       left: 4.5vw;
       width: 18vw;
       top: 14vh;
-      transition: width 0.6s ease-in-out, left 0.6s ease-in-out,
-        top 0.6s ease-in-out;
+      transition: width 0.9s ease-in-out, left 0.9s ease-in-out,
+        top 0.9s ease-in-out;
     }
     .harvest-season__slides[data-step="4"] [data-slide="3"] .painting__image {
       left: 35.5vw;
@@ -1281,7 +1328,7 @@
       right: 28vw;
     }
     [data-slide="4"] .painting__nameplate {
-      transition: top 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, left 0.9s ease-in-out;
       left: 76vw;
       top: 13.6vh;
     }
@@ -1312,10 +1359,17 @@
       right: 43.5vw;
     }
     [data-slide="5"] .painting__nameplate {
-      transition: bottom 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, left 0.9s ease-in-out !important;
       left: 59.25vw;
-      top: initial;
-      bottom: 12.6vh;
+      top: 58vh;
+      // bottom: 12.6vh;
+    }
+    .harvest-season__slides[data-step="9"]
+      [data-slide="5"]
+      .painting__nameplate {
+      top: 65vh;
+      // bottom: 5.6vh;
+      left: 59.25vw;
     }
 
     .harvest-season__slides[data-step="9"] [data-slide="5"] .painting__image {
@@ -1345,20 +1399,13 @@
       top: 40.5vh;
       left: 75.3vw;
     }
-    .harvest-season__slides[data-step="9"]
-      [data-slide="5"]
-      .painting__nameplate {
-      top: initial;
-      bottom: 5.6vh;
-      left: 59.25vw;
-    }
 
     .harvest-season__slides[data-step="10"] [data-slide="6"] .painting__image {
       left: 15.5vw;
       right: 42.2vw;
     }
     [data-slide="6"] .painting__nameplate {
-      transition: top 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, left 0.9s ease-in-out;
       left: 64.5vw;
       top: 14vh;
     }
@@ -1391,7 +1438,7 @@
       right: 43.8vw;
     }
     [data-slide="7"] .painting__nameplate {
-      transition: top 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, left 0.9s ease-in-out;
       left: 59.56vw;
       top: 13.56vh;
     }
@@ -1485,7 +1532,7 @@
       right: 37vw;
     }
     [data-slide="10"] .painting__nameplate {
-      transition: top 0.6s ease-in-out, left 0.6s ease-in-out;
+      transition: top 0.9s ease-in-out, left 0.9s ease-in-out;
       top: 14vh;
       left: 67.7vw;
     }
@@ -1612,8 +1659,8 @@
       left: 48.5vw;
     }
     [data-slide="3"] .painting__nameplate {
-      transition: bottom 0.6s ease-in-out, right 0.6s ease-in-out,
-        left 0.6s ease-in-out, top 0.6s ease-in-out, opacity 0.3s ease-in-out;
+      transition: bottom 0.9s ease-in-out, right 0.9s ease-in-out,
+        left 0.9s ease-in-out, top 0.9s ease-in-out, opacity 0.5s ease-in-out;
       top: initial;
       left: 10vw;
       width: auto;
@@ -1799,7 +1846,7 @@
     [data-slide="8"] .painting {
       right: initial;
       left: 0;
-      transition: left 0.6s ease-in-out;
+      transition: left 0.9s ease-in-out;
     }
     .harvest-season__slides[data-step="15"] [data-slide="8"] .painting__image {
       left: 59.5vw;
@@ -1849,7 +1896,8 @@
       [data-slide="9"]
       .painting__nameplate {
       right: 16.5vw;
-      top: 54vh;
+      top: initial;
+      bottom: 10vh;
     }
     [data-slide="9"] .briliant__image {
       left: 44vw;
@@ -1875,8 +1923,8 @@
       bottom: 7vh;
     }
     [data-slide="10"] .painting {
-      transition: opacity 0.6s ease-in-out, right 0.6s ease-in-out,
-        width 0.6s ease-in-out;
+      transition: opacity 0.9s ease-in-out, right 0.9s ease-in-out,
+        width 0.9s ease-in-out;
     }
     .harvest-season__slides[data-step="19"] [data-slide="10"] .painting {
       width: 48.5%;
