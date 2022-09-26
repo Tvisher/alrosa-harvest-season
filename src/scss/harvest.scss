@@ -255,7 +255,7 @@
   }
   .briliant__info {
     display: flex;
-    gap: calc($index * 0.4);
+    // gap: calc($index * 0.4);
     font-family: "Times New Roman";
     font-style: normal;
     font-weight: 400;
@@ -1645,6 +1645,178 @@
       bottom: initial;
       top: 10vh;
       left: 75.5vw;
+    }
+    .harvest-season__slides[data-step="6"] [data-slide="4"] .painting__image {
+      left: 2.8vw;
+      right: 49vw;
+    }
+    [data-slide="4"] .painting__nameplate {
+      left: 56.5vw;
+      top: 8.6vh;
+    }
+
+    .harvest-season__slides[data-step="7"] [data-slide="4"] .painting__image {
+      left: 35.4vw;
+      right: 27.3vw;
+      top: 5.5vh;
+      bottom: 6vh;
+    }
+    .harvest-season__slides[data-step="7"]
+      [data-slide="4"]
+      .painting__nameplate {
+      left: 78.1vw;
+      top: 8.5vh;
+    }
+    .harvest-season__slides[data-step="7"] [data-slide="4"] .painting {
+      width: 67.6%;
+    }
+    [data-slide="4"] .briliant__image {
+      left: 4.2vw;
+      top: 22vh;
+      width: 16vw;
+      height: 26vh;
+    }
+    [data-slide="4"] .briliant__nameplate {
+      top: 54vh;
+      left: 5.6vw;
+      width: 25vw;
+    }
+    .harvest-season__slides[data-step="8"] [data-slide="5"] .painting__image {
+      right: 56.5vw;
+    }
+    [data-slide="5"] .painting__nameplate {
+      left: 48.5vw;
+      bottom: 6.6vh;
+    }
+    .harvest-season__slides[data-step="9"] [data-slide="5"] .painting__image {
+      left: 3.25vw;
+      right: 62vw;
+      top: 5.5vh;
+      bottom: 6.7vh;
+    }
+    [data-slide="5"] .briliant__image.first {
+      left: 40.2vw;
+      top: 4.4vh;
+      width: 15vw;
+      height: 22vh;
+    }
+    [data-slide="5"] .briliant__image.second {
+      left: 42.4vw;
+      top: 26vh;
+      width: 10vw;
+      height: 23vh;
+    }
+    [data-slide="5"] .briliant__nameplate.first {
+      width: auto;
+      top: 7.5vh;
+      left: 54.3vw;
+    }
+    [data-slide="5"] .briliant__nameplate.second {
+      top: 29.5vh;
+      left: 54.3vw;
+    }
+    .harvest-season__slides[data-step="9"]
+      [data-slide="5"]
+      .painting__nameplate {
+      bottom: 6vh;
+      left: 43.5vw;
+    }
+    .harvest-season__slides[data-step="10"] [data-slide="6"] .painting__image {
+      left: 8vw;
+      right: 61.2vw;
+    }
+    [data-slide="6"] .painting__nameplate {
+      left: 44.5vw;
+      top: 9vh;
+    }
+    .harvest-season__slides[data-step="11"] [data-slide="6"] .painting__image {
+      left: 35.54vw;
+      right: 38vw;
+      top: 5.2vh;
+      bottom: 6.5vh;
+    }
+    .harvest-season__slides[data-step="11"]
+      [data-slide="6"]
+      .painting__nameplate {
+      left: 67.5vw;
+      top: 9.5vh;
+    }
+    [data-slide="6"] .briliant__image {
+      left: 4.3vw;
+      top: 17.3vh;
+      width: 16vw;
+      height: 35vh;
+    }
+    [data-slide="6"] .briliant__nameplate {
+      bottom: 9vh;
+      left: 5.5vw;
+    }
+    .harvest-season__slides[data-step="12"] [data-slide="7"] .painting__image {
+      right: 58.5vw;
+    }
+    [data-slide="7"] .painting__nameplate {
+      left: 46.8vw;
+      top: 8.56vh;
+    }
+    .harvest-season__slides[data-step="13"] [data-slide="7"] .painting__image {
+      top: 5vh;
+      left: 3vw;
+      bottom: 5vh;
+      right: 61.5vw;
+    }
+    [data-slide="7"] .briliant {
+      width: 58.5vw;
+    }
+    .harvest-season__slides[data-step="13"]
+      [data-slide="7"]
+      .painting__nameplate {
+      left: 46.8vw;
+    }
+    [data-slide="7"] .briliant__image {
+      left: 44vw;
+      top: 43.3vh;
+      width: 15.5vw;
+      height: 30.5vh;
+    }
+    [data-slide="7"] .briliant__nameplate {
+      top: 50.9vh;
+      left: 60.8vw;
+    }
+    .harvest-season__slides[data-step="14"] [data-slide="8"] .painting__image {
+      right: 48vw;
+    }
+    [data-slide="8"] .painting__nameplate.first {
+      left: 56.5vw;
+      top: 8vh;
+    }
+
+    .harvest-season__slides[data-step="15"] [data-slide="8"] .painting {
+      right: initial;
+      left: 27vw;
+    }
+    .harvest-season__slides[data-step="15"] [data-slide="8"] .painting__image {
+      left: 59.5vw;
+      top: 6vh;
+      right: 3vw;
+      bottom: 5.78vh;
+    }
+    [data-slide="8"] .painting__nameplate.second {
+      text-align: right;
+      left: inherit;
+      right: 45vw;
+      top: 8.47vh;
+      width: 26vw;
+    }
+    [data-slide="8"] .briliant__image {
+      left: 2vw;
+      top: 26vh;
+      width: 16vw;
+      height: 27.5vh;
+    }
+    [data-slide="8"] .briliant__nameplate {
+      top: initial;
+      bottom: 9vh;
+      left: 3.5vw;
     }
   }
 }
