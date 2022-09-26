@@ -2001,6 +2001,7 @@ body {
 }
 
 #harvestSeason {
+  overflow: hidden;
   position: relative;
   background-color: #ddd9cf;
   height: calc(100vh - 64px);
@@ -3615,6 +3616,10 @@ body {
 }
 
 @media (max-width: 992px) and (max-height: 450px) {
+  #harvestSeason .pagination_wrapper {
+    display: none !important;
+  }
+
   #harvestSeason .nameplate__auth {
     letter-spacing: 1px;
     margin-bottom: calc((1vw + 1vh) * 0.9);
