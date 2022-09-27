@@ -1568,6 +1568,9 @@
     .main-slide__image {
       width: 13vw;
     }
+    .images-col {
+      gap: calc((1vw + 1vh) * 0.6);
+    }
     .main-slide__images {
       gap: calc((1vw + 1vh) * 0.6);
       flex: 0 0 41%;
