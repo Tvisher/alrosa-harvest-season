@@ -2010,7 +2010,7 @@ body {
   overflow: hidden;
   position: relative;
   background-color: #ddd9cf;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 65px);
 }
 
 #harvestSeason .slider-component__plug {
@@ -2322,6 +2322,7 @@ body {
   font-size: calc((1vw + 1vh) * 0.81);
   color: #22211e;
   margin-bottom: calc((1vw + 1vh) * 0.4);
+  line-height: 120%;
 }
 
 #harvestSeason .nameplate__name {

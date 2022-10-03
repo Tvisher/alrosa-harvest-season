@@ -60,7 +60,7 @@
   overflow: hidden;
   position: relative;
   background-color: #ddd9cf;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 65px);
 
   #harvestSeasonSlider {
     width: 100%;
@@ -279,6 +279,7 @@
     font-size: calc($index * 0.81);
     color: #22211e;
     margin-bottom: calc($index * 0.4);
+    line-height: 120%;
   }
   .nameplate__name {
     font-family: "Sylfaen";
